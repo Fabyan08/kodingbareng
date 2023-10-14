@@ -1,4 +1,11 @@
-import Button from "../Components/Button/Index";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { EffectCreative } from "swiper/modules";
+import Nav from "../Components/Nav/Index";
+import "./Slide.css";
+// import "swiper/css";
+// import "swipercss/effect-creative";
+import { Link } from "react-router-dom";
+// import Button from "../Components/Button/Index";
 const Home = () => {
   return (
     // <div className="font-figtree min-h-screen  bg-gradient-to-r from-white via-blue-400 to-blue-800">
@@ -21,44 +28,7 @@ const Home = () => {
                 </svg>
               </button>
             </div>
-            <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-16 font-jkt">
-              <li>
-                <a
-                  className="text-lg text-[#FBFBFB] font-bold hover:text-dongker hover:border-2 hover:border-white p-2 rounded-xl hover:scale-250 duration-200"
-                  href="#"
-                >
-                  Home
-                </a>
-              </li>
-
-              <li>
-                <a
-                  className="text-lg text-[#FBFBFB] font-bold  hover:text-dongker hover:border-2 hover:border-white p-2 rounded-xl hover:scale-250 duration-200"
-                  href="pages/mobil.html"
-                >
-                  About Us
-                </a>
-              </li>
-
-              <li>
-                <a
-                  className="text-lg text-[#FBFBFB] font-bold  hover:text-dongker hover:border-2 hover:border-white p-2 rounded-xl hover:scale-250 duration-200"
-                  href="pages/ulasan.html"
-                >
-                  Program
-                </a>
-              </li>
-
-              <li>
-                <a
-                  className="text-lg text-[#FBFBFB] font-bold  hover:text-dongker hover:border-2 hover:border-white p-2 rounded-xl hover:scale-250 duration-200"
-                  href="pages/kontak.html"
-                >
-                  Contact Us
-                </a>
-              </li>
-            </ul>
-            <Button children="Lets' Talk" />
+           <Nav />
           </nav>
           <div className="backdrop-sepia-0 relative bg-white/30 blur-2xl">
             <div className="absolute -z-20 w-96 h-96 -mt-40 -ml-40 rounded-full bg-white"></div>
@@ -70,12 +40,12 @@ const Home = () => {
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
               <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
                 <div>
-                  <h1 className="text-4xl font-bold text-black sm:text-6xl lg:text-7xl">
+                  <h1 className="text-6xl font-bold text-slate-800 sm:text-6xl lg:text-7xl">
                     Let's Join Our{" "}
                     <span className="text-white shadow-sm">Coding </span>
                     <div className="relative inline-flex">
                       <span className="absolute inset-x-0 bottom-0 border-b-[30px] border-dongker"></span>
-                      <h1 className="relative text-4xl font-bold text-black sm:text-6xl lg:text-7xl">
+                      <h1 className="relative text-6xl font-bold text-slate-800 sm:text-6xl lg:text-7xl">
                         Community.
                       </h1>
                     </div>
@@ -90,7 +60,7 @@ const Home = () => {
                     <a
                       href="#"
                       title=""
-                      className="inline-flex items-center justify-center bg-biru text-white border-white border-4 hover:scale-125 hover:bg-gray-100 hover:text-biru hover:border-4 hover:border-biru text-xl font-bold rounded-xl transition duration-200 px-10 py-4 shadow-xl  focus:bg-blue-600"
+                      className="inline-flex items-center justify-center bg-biru text-white border-white border-4 hover:scale-110 md:hover:scale-125 hover:bg-gray-100 hover:text-biru hover:border-4 hover:border-biru text-xl font-bold rounded-xl transition duration-200 px-10 py-4 shadow-xl  focus:bg-blue-600"
                       role="button"
                     >
                       {" "}
@@ -98,7 +68,8 @@ const Home = () => {
                     </a>
 
                     <a
-                      href="#"
+                      href="https://tiktok.com/@kodingbareng"
+                      target="_blank"
                       title=""
                       className="inline-flex items-center text-white mt-6 text-xl font-semibold transition-all duration-200 sm:mt-0 hover:opacity-80"
                     >
@@ -204,12 +175,12 @@ const Home = () => {
                   </a>
                 </li>
                 <li className="mb-1">
-                  <a
+                  <Link
                     className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-kuning rounded"
-                    href="pages/mobil.html"
+                    to="about"
                   >
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-1">
                   <a
@@ -267,8 +238,8 @@ const Home = () => {
                     <img src="/src/assets/icon/aktivitas/Group 5.png" alt="" />
                     <h1 className="text-center w-60 font-bold">Discussion</h1>
                     <p className="text-sm font-base">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Libero, rem.
+                      Share your insightfull story and make positive discussion
+                      about IT with each other.
                     </p>
                   </div>
                 </div>
@@ -276,11 +247,14 @@ const Home = () => {
               <div className="w-1/4 z-50 relative rounded-tl-[80px] rounded-bl-[80px] flex text-figtree justify-center text-center items-center text-4xl">
                 <div className="py-[142px] px-4 -z-10 inset-x-0 rounded-lg hover:bg-gradient-to-r from-biru to-blue-500 hover:scale-110 transition duration-300 ease-in-out hover:shadow-lg">
                   <div className="justify-center items-center  flex flex-col ">
-                  <img src="/src/assets/icon/aktivitas/Group 5-1.png" alt="" />
-                    <h1 className="text-center w-60 font-bold">Our Activity</h1>
+                    <img
+                      src="/src/assets/icon/aktivitas/Group 5-1.png"
+                      alt=""
+                    />
+                    <h1 className="text-center w-60 font-bold">Chatting</h1>
                     <p className="text-sm font-base">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Libero, rem.
+                      In here, you can make conversation with each other and
+                      have meaningfull experience.
                     </p>
                   </div>
                 </div>
@@ -288,11 +262,14 @@ const Home = () => {
               <div className="w-1/4 z-50 relative rounded-tl-[80px] rounded-bl-[80px] flex text-figtree justify-center text-center items-center text-4xl">
                 <div className="py-[142px] px-4 -z-10 inset-x-0 rounded-lg hover:bg-gradient-to-r from-biru to-blue-500 hover:scale-110 transition duration-300 ease-in-out hover:shadow-lg">
                   <div className="justify-center items-center  flex flex-col ">
-                  <img src="/src/assets/icon/aktivitas/Group 5-3.png" alt="" />
-                    <h1 className="text-center w-60 font-bold">Our Activity</h1>
+                    <img
+                      src="/src/assets/icon/aktivitas/Group 5-3.png"
+                      alt=""
+                    />
+                    <h1 className="text-center w-60 font-bold">Quiz</h1>
                     <p className="text-sm font-base">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Libero, rem.
+                      With interactif quiz, you can learn coding by real case
+                      and improve your skill.
                     </p>
                   </div>
                 </div>
@@ -301,11 +278,14 @@ const Home = () => {
               <div className="w-1/4 z-50 relative rounded-tr-[80px] rounded-br-[80px] flex text-figtree justify-center text-center items-center text-4xl">
                 <div className="py-[142px] px-4 -z-10 inset-x-0  rounded-br-[80px] rounded-tr-[80px] hover:bg-gradient-to-r from-biru to-blue-500  hover:scale-110 transition duration-300 ease-in-out hover:shadow-lg">
                   <div className="justify-center items-center  flex flex-col ">
-                  <img src="/src/assets/icon/aktivitas/Group 5-2.png" alt="" />
-                    <h1 className="text-center w-60 font-bold">Our Activity</h1>
+                    <img
+                      src="/src/assets/icon/aktivitas/Group 5-2.png"
+                      alt=""
+                    />
+                    <h1 className="text-center w-60 font-bold">Networking</h1>
                     <p className="text-sm font-base">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Libero, rem.
+                      Networking is one of the best way to improve your social
+                      skills in IT, so what do you wait?
                     </p>
                   </div>
                 </div>
@@ -313,52 +293,52 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="md:hidden items-center justify-center space-y-5">
-            <div className="bg-biru w-72 h-72  mx-auto rounded-[50px] border-8 border-white shadow-md shadow-biru py-10 ">
+          <div className="md:hidden mt-10 items-center justify-center space-y-5">
+            <div className="bg-biru w-72 h-72  hover:border-biru hover:bg-white   mx-auto rounded-[50px] border-8 border-white shadow-md shadow-biru py-10 text-white hover:text-biru hover:scale-110 duration-200">
               <div className="justify-center items-center flex flex-col ">
-                <img src="/src/assets/icon/icon 4 remaster.png" alt="" />
+                <img src="/src/assets/icon/aktivitas/Group 5.png" alt="" />
                 <h1 className=" text-2xl font-bold text-dongker text-center">
-                  Our Activity
+                  Discussion
                 </h1>
-                <p className="text-md text-white text-center p-2 ">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Libero, rem.
+                <p className="text-md text-center p-2 ">
+                  Share your insightfull story and make positive discussion
+                  about IT with each other.
                 </p>
               </div>
             </div>
-            <div className="bg-biru w-72 h-72  rounded-[50px] mx-auto border-8 border-white shadow-md shadow-biru py-10 ">
-              <div className="justify-center items-center flex flex-col ">
-                <img src="/src/assets/icon/icon 4 remaster.png" alt="" />
+            <div className="bg-biru w-72 h-72  rounded-[50px] mx-auto text-white hover:text-biru hover:scale-110 duration-200 hover:bg-white hover:border-biru border-8 border-white shadow-md shadow-biru py-10 ">
+              <div className="justify-center items-center flex flex-col  ">
+                <img src="/src/assets/icon/aktivitas/Group 5-1.png" alt="" />
                 <h1 className=" text-2xl font-bold text-dongker text-center">
-                  Our Activity
+                  Chatting{" "}
                 </h1>
-                <p className="text-md text-white text-center p-2 ">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Libero, rem.
+                <p className="text-md  text-center p-2 ">
+                  In here, you can make conversation with each other and have
+                  meaningfull experience.
                 </p>
               </div>
             </div>
-            <div className="bg-biru w-72 h-72  rounded-[50px] mx-auto border-8 border-white shadow-md shadow-biru py-10 ">
-              <div className="justify-center items-center flex flex-col ">
-                <img src="/src/assets/icon/icon 4 remaster.png" alt="" />
+            <div className="bg-biru w-72 h-72  rounded-[50px] mx-auto text-white hover:text-biru hover:scale-110 duration-200 hover:bg-white hover:border-biru border-8 border-white shadow-md shadow-biru py-10 ">
+              <div className="justify-center items-center flex flex-col  ">
+                <img src="/src/assets/icon/aktivitas/Group 5-3.png" alt="" />
                 <h1 className=" text-2xl font-bold text-dongker text-center">
-                  Our Activity
+                  Quiz{" "}
                 </h1>
-                <p className="text-md text-white text-center p-2 ">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Libero, rem
+                <p className="text-md  text-center p-2 ">
+                  With interactif quiz, you can learn coding by real case and
+                  improve your skill.
                 </p>
               </div>
             </div>
-            <div className="bg-biru w-72 h-72  rounded-[50px] mx-auto border-8 border-white shadow-md shadow-biru py-10 ">
-              <div className="justify-center items-center flex flex-col ">
-                <img src="/src/assets/icon/icon 4 remaster.png" alt="" />
+            <div className="bg-biru w-72 h-72  rounded-[50px] mx-auto text-white hover:text-biru hover:scale-110 duration-200 hover:bg-white hover:border-biru border-8 border-white shadow-md shadow-biru py-10 ">
+              <div className="justify-center items-center flex flex-col  ">
+                <img src="/src/assets/icon/aktivitas/Group 5-2.png" alt="" />
                 <h1 className=" text-2xl font-bold text-dongker text-center">
-                  Our Activity
+                  Networking
                 </h1>
-                <p className="text-md text-white text-center p-2 ">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Libero, rem.
+                <p className="text-md  text-center p-2 ">
+                  Networking is one of the best way to improve your social
+                  skills in IT, so what do you wait?
                 </p>
               </div>
             </div>
@@ -370,10 +350,10 @@ const Home = () => {
             </div>
             <div className="w-full text-left md:pl-40">
               <div className="flex items-center mt-10 justify-start">
-              <img src="/src/assets/icon/value/Group 4.png" alt="" 
-
-                  className="w-14"
+                <img
+                  src="/src/assets/icon/value/Group 4.png"
                   alt=""
+                  className="w-14"
                 />
                 <h1 className="inline-block align-middle my-auto ml-2 text-biru font-bold text-2xl md:text-4xl">
                   Our Value To Help You
@@ -388,58 +368,56 @@ const Home = () => {
               <div className="flex space-x-5 mt-14">
                 <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-50 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl w-48 h-48">
                   <div className="absolute z-[999] opacity-100 -mt-10 ml-4">
-                  <img src="/src/assets/icon/value/Group 5-3.png" alt="" />
+                    <img src="/src/assets/icon/value/Group 5-3.png" alt="" />
                     <div className=" mt-2">
                       <h1 className=" text-dongker font-bold text-xl">
-                        Network
+                        Education
                       </h1>
                       <h1 className=" text-dongker mt-2 font-semibold text-md">
-                        Our value is create positive networking of each other in
-                        IT
+                        In here, you can have some education about coding also
+                        IT.
                       </h1>
                     </div>
                   </div>
                 </div>
                 <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-50 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl w-48 h-48">
-                  <div className="absolute z-[999] opacity-100 -mt-10 ml-4">
-                  <img src="/src/assets/icon/value/Group 5.png" alt="" />
+                  <div className="absolute z-[999] opacity-100 px-2 -mt-10 ml-4">
+                    <img src="/src/assets/icon/value/Group 5.png" alt="" />
                     <div className=" mt-2">
                       <h1 className=" text-dongker font-bold text-xl">
-                        Network
+                        Online Meet
                       </h1>
                       <h1 className=" text-dongker mt-2 font-semibold text-md">
-                        Our value is create positive networking of each other in
-                        IT
+                        In some moment later, we will have some online meeting
+                        just to speak with each other.
                       </h1>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="flex space-x-5 mt-14">
-                <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-50 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl w-48 h-48">
-                  <div className="absolute z-[999] opacity-100 -mt-10 ml-4">
-                  <img src="/src/assets/icon/value/Group 5-1.png" alt="" />
+                <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-50 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl  w-48 h-48">
+                  <div className="absolute z-[999] opacity-100 pr-2 -mt-10 ml-4">
+                    <img src="/src/assets/icon/value/Group 5-1.png" alt="" />
                     <div className=" mt-2">
-                      <h1 className=" text-dongker font-bold text-xl">
-                        Network
-                      </h1>
+                      <h1 className=" text-dongker font-bold text-xl">Gift</h1>
                       <h1 className=" text-dongker mt-2 font-semibold text-md">
-                        Our value is create positive networking of each other in
-                        IT
+                        Don't worry about the gift, we will have some weekly
+                        quiz and has some gift too for the winner.
                       </h1>
                     </div>
                   </div>
                 </div>
                 <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-50 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl w-48 h-48">
-                  <div className="absolute z-[999] opacity-100 -mt-10 ml-4">
-                  <img src="/src/assets/icon/value/Group 5-2.png" alt="" />
+                  <div className="absolute z-[999] opacity-100 pr-4 -mt-10 ml-4">
+                    <img src="/src/assets/icon/value/Group 5-2.png" alt="" />
                     <div className=" mt-2">
                       <h1 className=" text-dongker font-bold text-xl">
-                        Network
+                        Quesetion-Answer
                       </h1>
-                      <h1 className=" text-dongker mt-2 font-semibold text-md">
-                        Our value is create positive networking of each other in
-                        IT
+                      <h1 className=" text-dongker md:mt-2 font-semibold text-md">
+                        In here, we work together to answer about your question
+                        and give it best answer.
                       </h1>
                     </div>
                   </div>
@@ -452,8 +430,8 @@ const Home = () => {
             <div className="items-center mt-10 flex-grow">
               <div className="w-full text-left md:pl-24">
                 <div className="flex items-center ml-2  mt-10 justify-start">
-                <img src="/src/assets/icon/testi/Group 22.png" 
-
+                  <img
+                    src="/src/assets/icon/testi/Group 22.png"
                     className="w-14"
                     alt=""
                   />
@@ -468,7 +446,7 @@ const Home = () => {
                   </h1>
                 </div>
                 <div className="absolute ml-2">
-                <img src="/src/assets/icon/testi/Group 22-1.png" alt="" />
+                  <img src="/src/assets/icon/testi/Group 22-1.png" alt="" />
                 </div>
                 <div className="bg-biru w-full md:w-[600px] h-60 mt-10 rounded-2xl">
                   <div>
@@ -489,6 +467,32 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            {/* <Swiper
+              grabCursor={true}
+              effect={"creative"}
+              creativeEffect={{
+                prev: {
+                  shadow: true,
+                  translate: [0, 0, -400],
+                },
+                next: {
+                  translate: ["100%", 0, 0],
+                },
+              }}
+              modules={[EffectCreative]}
+              className="mySwiper"
+            >
+              <SwiperSlide>Slide 1</SwiperSlide>
+              <SwiperSlide>Slide 2</SwiperSlide>
+              <SwiperSlide>Slide 3</SwiperSlide>
+              <SwiperSlide>Slide 4</SwiperSlide>
+              <SwiperSlide>Slide 5</SwiperSlide>
+              <SwiperSlide>Slide 6</SwiperSlide>
+              <SwiperSlide>Slide 7</SwiperSlide>
+              <SwiperSlide>Slide 8</SwiperSlide>
+              <SwiperSlide>Slide 9</SwiperSlide>
+            </Swiper> */}
+
             <div className="-mr-20 mt-0 md:-mt-20 ">
               <img src="/src/assets/icon/tfoot 1.png" alt="" />
             </div>
@@ -497,7 +501,7 @@ const Home = () => {
         <div className="md:flex mt-20 md:px-24 items-center justify-center px-4">
           <div className="relative w-full items-center justify-center bg-gradient-to-r from-biru via-biru to-blue-400 h-[400px] md:h-[500px] rounded-[100px] border-[20px] shadow-2xl shadow-biru border-white text-white text-center py-16 md:py-32">
             <div className="flex justify-center items-center">
-            <img src="/src/assets/img/logo white.png" alt="" />
+              <img src="/src/assets/img/logo white.png" alt="" />
             </div>
             <div className="font-bold font-figtree text-4xl">
               <h1 className="mt-2">
@@ -547,13 +551,13 @@ const Home = () => {
                   </li>
 
                   <li>
-                    <a
-                      href="pages/mobil.html"
+                    <Link
+                      to="about"
                       title=""
                       className="text-sm text-biru transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
                     >
                       About Us
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
@@ -580,19 +584,22 @@ const Home = () => {
                 <div className="w-full h-px mt-8 mb-5 xl:w-px xl:m-0 xl:h-6 bg-gray-50/20"></div>
 
                 <ul className="flex items-center justify-center space-x-8 xl:justify-end">
-                 
-
                   <li>
                     <a
                       href="#"
                       title=""
                       className="block text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
                     >
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="#3B8DFF"                         className="w-6 h-6"
- viewBox="0 0 32 32" version="1.1">
-<title>tiktok</title>
-<path d="M16.656 1.029c1.637-0.025 3.262-0.012 4.886-0.025 0.054 2.031 0.878 3.859 2.189 5.213l-0.002-0.002c1.411 1.271 3.247 2.095 5.271 2.235l0.028 0.002v5.036c-1.912-0.048-3.71-0.489-5.331-1.247l0.082 0.034c-0.784-0.377-1.447-0.764-2.077-1.196l0.052 0.034c-0.012 3.649 0.012 7.298-0.025 10.934-0.103 1.853-0.719 3.543-1.707 4.954l0.020-0.031c-1.652 2.366-4.328 3.919-7.371 4.011l-0.014 0c-0.123 0.006-0.268 0.009-0.414 0.009-1.73 0-3.347-0.482-4.725-1.319l0.040 0.023c-2.508-1.509-4.238-4.091-4.558-7.094l-0.004-0.041c-0.025-0.625-0.037-1.25-0.012-1.862 0.49-4.779 4.494-8.476 9.361-8.476 0.547 0 1.083 0.047 1.604 0.136l-0.056-0.008c0.025 1.849-0.050 3.699-0.050 5.548-0.423-0.153-0.911-0.242-1.42-0.242-1.868 0-3.457 1.194-4.045 2.861l-0.009 0.030c-0.133 0.427-0.21 0.918-0.21 1.426 0 0.206 0.013 0.41 0.037 0.61l-0.002-0.024c0.332 2.046 2.086 3.59 4.201 3.59 0.061 0 0.121-0.001 0.181-0.004l-0.009 0c1.463-0.044 2.733-0.831 3.451-1.994l0.010-0.018c0.267-0.372 0.45-0.822 0.511-1.311l0.001-0.014c0.125-2.237 0.075-4.461 0.087-6.698 0.012-5.036-0.012-10.060 0.025-15.083z"/>
-</svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="#3B8DFF"
+                        className="w-6 h-6"
+                        viewBox="0 0 32 32"
+                        version="1.1"
+                      >
+                        <title>tiktok</title>
+                        <path d="M16.656 1.029c1.637-0.025 3.262-0.012 4.886-0.025 0.054 2.031 0.878 3.859 2.189 5.213l-0.002-0.002c1.411 1.271 3.247 2.095 5.271 2.235l0.028 0.002v5.036c-1.912-0.048-3.71-0.489-5.331-1.247l0.082 0.034c-0.784-0.377-1.447-0.764-2.077-1.196l0.052 0.034c-0.012 3.649 0.012 7.298-0.025 10.934-0.103 1.853-0.719 3.543-1.707 4.954l0.020-0.031c-1.652 2.366-4.328 3.919-7.371 4.011l-0.014 0c-0.123 0.006-0.268 0.009-0.414 0.009-1.73 0-3.347-0.482-4.725-1.319l0.040 0.023c-2.508-1.509-4.238-4.091-4.558-7.094l-0.004-0.041c-0.025-0.625-0.037-1.25-0.012-1.862 0.49-4.779 4.494-8.476 9.361-8.476 0.547 0 1.083 0.047 1.604 0.136l-0.056-0.008c0.025 1.849-0.050 3.699-0.050 5.548-0.423-0.153-0.911-0.242-1.42-0.242-1.868 0-3.457 1.194-4.045 2.861l-0.009 0.030c-0.133 0.427-0.21 0.918-0.21 1.426 0 0.206 0.013 0.41 0.037 0.61l-0.002-0.024c0.332 2.046 2.086 3.59 4.201 3.59 0.061 0 0.121-0.001 0.181-0.004l-0.009 0c1.463-0.044 2.733-0.831 3.451-1.994l0.010-0.018c0.267-0.372 0.45-0.822 0.511-1.311l0.001-0.014c0.125-2.237 0.075-4.461 0.087-6.698 0.012-5.036-0.012-10.060 0.025-15.083z" />
+                      </svg>
                     </a>
                   </li>
 
