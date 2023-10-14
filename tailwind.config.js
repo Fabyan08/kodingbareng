@@ -14,7 +14,7 @@ export default {
       colors: {
         biru: "#77B0FF",
         dongker: "#3B8DFF",
-        varian: "#D9D8D8",
+        varian: "#959394",
       },
     },
   },
