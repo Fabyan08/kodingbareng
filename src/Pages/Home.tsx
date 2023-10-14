@@ -255,7 +255,7 @@ const Home = () => {
             <div className="flex align-middle">
               <img src="/src/assets/icon/icon 4.png" alt="" />
               <h1 className="inline-block align-middle my-auto ml-2">
-                Our Activityy
+                Our Activity
               </h1>
             </div>
           </div>
@@ -264,7 +264,19 @@ const Home = () => {
               <div className="w-1/4 z-50 relative rounded-tl-[80px] rounded-bl-[80px] flex text-figtree justify-center text-center items-center text-4xl">
                 <div className="py-[142px] -z-10 inset-x-0  rounded-bl-[80px] rounded-tl-[80px] hover:bg-gradient-to-r from-biru to-blue-500  hover:scale-110 transition duration-300 ease-in-out hover:shadow-lg">
                   <div className="justify-center items-center  flex flex-col ">
-                    <img src="/src/assets/icon/icon 4 remaster.png" alt="" />
+                    <img src="/src/assets/icon/aktivitas/Group 5.png" alt="" />
+                    <h1 className="text-center w-60 font-bold">Discussion</h1>
+                    <p className="text-sm font-base">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Libero, rem.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-1/4 z-50 relative rounded-tl-[80px] rounded-bl-[80px] flex text-figtree justify-center text-center items-center text-4xl">
+                <div className="py-[142px] px-4 -z-10 inset-x-0 rounded-lg hover:bg-gradient-to-r from-biru to-blue-500 hover:scale-110 transition duration-300 ease-in-out hover:shadow-lg">
+                  <div className="justify-center items-center  flex flex-col ">
+                  <img src="/src/assets/icon/aktivitas/Group 5-1.png" alt="" />
                     <h1 className="text-center w-60 font-bold">Our Activity</h1>
                     <p className="text-sm font-base">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -276,19 +288,7 @@ const Home = () => {
               <div className="w-1/4 z-50 relative rounded-tl-[80px] rounded-bl-[80px] flex text-figtree justify-center text-center items-center text-4xl">
                 <div className="py-[142px] px-4 -z-10 inset-x-0 rounded-lg hover:bg-gradient-to-r from-biru to-blue-500 hover:scale-110 transition duration-300 ease-in-out hover:shadow-lg">
                   <div className="justify-center items-center  flex flex-col ">
-                    <img src="/src/assets/icon/icon 4 remaster.png" alt="" />
-                    <h1 className="text-center w-60 font-bold">Our Activity</h1>
-                    <p className="text-sm font-base">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Libero, rem.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="w-1/4 z-50 relative rounded-tl-[80px] rounded-bl-[80px] flex text-figtree justify-center text-center items-center text-4xl">
-                <div className="py-[142px] px-4 -z-10 inset-x-0 rounded-lg hover:bg-gradient-to-r from-biru to-blue-500 hover:scale-110 transition duration-300 ease-in-out hover:shadow-lg">
-                  <div className="justify-center items-center  flex flex-col ">
-                    <img src="/src/assets/icon/icon 4 remaster.png" alt="" />
+                  <img src="/src/assets/icon/aktivitas/Group 5-3.png" alt="" />
                     <h1 className="text-center w-60 font-bold">Our Activity</h1>
                     <p className="text-sm font-base">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -301,7 +301,7 @@ const Home = () => {
               <div className="w-1/4 z-50 relative rounded-tr-[80px] rounded-br-[80px] flex text-figtree justify-center text-center items-center text-4xl">
                 <div className="py-[142px] px-4 -z-10 inset-x-0  rounded-br-[80px] rounded-tr-[80px] hover:bg-gradient-to-r from-biru to-blue-500  hover:scale-110 transition duration-300 ease-in-out hover:shadow-lg">
                   <div className="justify-center items-center  flex flex-col ">
-                    <img src="/src/assets/icon/icon 4 remaster.png" alt="" />
+                  <img src="/src/assets/icon/aktivitas/Group 5-2.png" alt="" />
                     <h1 className="text-center w-60 font-bold">Our Activity</h1>
                     <p className="text-sm font-base">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -370,8 +370,8 @@ const Home = () => {
             </div>
             <div className="w-full text-left md:pl-40">
               <div className="flex items-center mt-10 justify-start">
-                <img
-                  src="/src/assets/icon/icon 4.png"
+              <img src="/src/assets/icon/value/Group 4.png" alt="" 
+
                   className="w-14"
                   alt=""
                 />
@@ -388,7 +388,7 @@ const Home = () => {
               <div className="flex space-x-5 mt-14">
                 <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-50 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl w-48 h-48">
                   <div className="absolute z-[999] opacity-100 -mt-10 ml-4">
-                    <img src="/src/assets/icon/icon 4.png" alt="" />
+                  <img src="/src/assets/icon/value/Group 5-3.png" alt="" />
                     <div className=" mt-2">
                       <h1 className=" text-dongker font-bold text-xl">
                         Network
@@ -402,7 +402,7 @@ const Home = () => {
                 </div>
                 <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-50 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl w-48 h-48">
                   <div className="absolute z-[999] opacity-100 -mt-10 ml-4">
-                    <img src="/src/assets/icon/icon 4.png" alt="" />
+                  <img src="/src/assets/icon/value/Group 5.png" alt="" />
                     <div className=" mt-2">
                       <h1 className=" text-dongker font-bold text-xl">
                         Network
@@ -418,7 +418,7 @@ const Home = () => {
               <div className="flex space-x-5 mt-14">
                 <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-50 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl w-48 h-48">
                   <div className="absolute z-[999] opacity-100 -mt-10 ml-4">
-                    <img src="/src/assets/icon/icon 4.png" alt="" />
+                  <img src="/src/assets/icon/value/Group 5-1.png" alt="" />
                     <div className=" mt-2">
                       <h1 className=" text-dongker font-bold text-xl">
                         Network
@@ -432,7 +432,7 @@ const Home = () => {
                 </div>
                 <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-50 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl w-48 h-48">
                   <div className="absolute z-[999] opacity-100 -mt-10 ml-4">
-                    <img src="/src/assets/icon/icon 4.png" alt="" />
+                  <img src="/src/assets/icon/value/Group 5-2.png" alt="" />
                     <div className=" mt-2">
                       <h1 className=" text-dongker font-bold text-xl">
                         Network
@@ -452,8 +452,8 @@ const Home = () => {
             <div className="items-center mt-10 flex-grow">
               <div className="w-full text-left md:pl-24">
                 <div className="flex items-center ml-2  mt-10 justify-start">
-                  <img
-                    src="/src/assets/icon/icon 4.png"
+                <img src="/src/assets/icon/testi/Group 22.png" 
+
                     className="w-14"
                     alt=""
                   />
@@ -468,7 +468,7 @@ const Home = () => {
                   </h1>
                 </div>
                 <div className="absolute ml-2">
-                  <img src="/src/assets/icon/icon 4.png" alt="" />
+                <img src="/src/assets/icon/testi/Group 22-1.png" alt="" />
                 </div>
                 <div className="bg-biru w-full md:w-[600px] h-60 mt-10 rounded-2xl">
                   <div>
@@ -497,7 +497,7 @@ const Home = () => {
         <div className="md:flex mt-20 md:px-24 items-center justify-center px-4">
           <div className="relative w-full items-center justify-center bg-gradient-to-r from-biru via-biru to-blue-400 h-[400px] md:h-[500px] rounded-[100px] border-[20px] shadow-2xl shadow-biru border-white text-white text-center py-16 md:py-32">
             <div className="flex justify-center items-center">
-              <img src="/src/assets/icon/icon 4 remaster.png" alt="" />
+            <img src="/src/assets/img/logo white.png" alt="" />
             </div>
             <div className="font-bold font-figtree text-4xl">
               <h1 className="mt-2">
@@ -552,7 +552,7 @@ const Home = () => {
                       title=""
                       className="text-sm text-biru transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
                     >
-                      Daftar Mobil
+                      About Us
                     </a>
                   </li>
 
@@ -562,7 +562,7 @@ const Home = () => {
                       title=""
                       className="text-sm text-biru transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
                     >
-                      Ulasan
+                      Program
                     </a>
                   </li>
 
@@ -572,7 +572,7 @@ const Home = () => {
                       title=""
                       className="text-sm text-biru transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
                     >
-                      Hubungi Kami
+                      Contact Us
                     </a>
                   </li>
                 </ul>
@@ -580,22 +580,7 @@ const Home = () => {
                 <div className="w-full h-px mt-8 mb-5 xl:w-px xl:m-0 xl:h-6 bg-gray-50/20"></div>
 
                 <ul className="flex items-center justify-center space-x-8 xl:justify-end">
-                  <li>
-                    <a
-                      href="#"
-                      title=""
-                      className="block text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
-                    >
-                      <svg
-                        className="w-6 h-6"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="#3B8DFF"
-                      >
-                        <path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path>
-                      </svg>
-                    </a>
-                  </li>
+                 
 
                   <li>
                     <a
@@ -603,14 +588,11 @@ const Home = () => {
                       title=""
                       className="block text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
                     >
-                      <svg
-                        className="w-6 h-6"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="#3B8DFF"
-                      >
-                        <path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path>
-                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="#3B8DFF"                         className="w-6 h-6"
+ viewBox="0 0 32 32" version="1.1">
+<title>tiktok</title>
+<path d="M16.656 1.029c1.637-0.025 3.262-0.012 4.886-0.025 0.054 2.031 0.878 3.859 2.189 5.213l-0.002-0.002c1.411 1.271 3.247 2.095 5.271 2.235l0.028 0.002v5.036c-1.912-0.048-3.71-0.489-5.331-1.247l0.082 0.034c-0.784-0.377-1.447-0.764-2.077-1.196l0.052 0.034c-0.012 3.649 0.012 7.298-0.025 10.934-0.103 1.853-0.719 3.543-1.707 4.954l0.020-0.031c-1.652 2.366-4.328 3.919-7.371 4.011l-0.014 0c-0.123 0.006-0.268 0.009-0.414 0.009-1.73 0-3.347-0.482-4.725-1.319l0.040 0.023c-2.508-1.509-4.238-4.091-4.558-7.094l-0.004-0.041c-0.025-0.625-0.037-1.25-0.012-1.862 0.49-4.779 4.494-8.476 9.361-8.476 0.547 0 1.083 0.047 1.604 0.136l-0.056-0.008c0.025 1.849-0.050 3.699-0.050 5.548-0.423-0.153-0.911-0.242-1.42-0.242-1.868 0-3.457 1.194-4.045 2.861l-0.009 0.030c-0.133 0.427-0.21 0.918-0.21 1.426 0 0.206 0.013 0.41 0.037 0.61l-0.002-0.024c0.332 2.046 2.086 3.59 4.201 3.59 0.061 0 0.121-0.001 0.181-0.004l-0.009 0c1.463-0.044 2.733-0.831 3.451-1.994l0.010-0.018c0.267-0.372 0.45-0.822 0.511-1.311l0.001-0.014c0.125-2.237 0.075-4.461 0.087-6.698 0.012-5.036-0.012-10.060 0.025-15.083z"/>
+</svg>
                     </a>
                   </li>
 
