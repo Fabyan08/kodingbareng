@@ -487,7 +487,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="-mr-20 mt-0 md:-mt-20  ">
+            <div className="-mr-20 mt-0 md:-mt-20 ">
               <img src="/src/assets/icon/tfoot 1.png" alt="" />
             </div>
           </div>
