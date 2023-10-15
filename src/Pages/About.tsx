@@ -78,8 +78,6 @@ const About = () => {
             {items}
           </OwlCarousel>
           {/* </div> */}
-
-        
         </div>
       </div>
 
