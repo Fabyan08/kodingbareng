@@ -40,7 +40,7 @@ const Desktop = () => {
                 </a>
               </li>
             </ul>
-            <Button children="Lets' Talk" />
+            <Button children="Lets' Talk" rotate={12}/>
         </div>
     )
 }
