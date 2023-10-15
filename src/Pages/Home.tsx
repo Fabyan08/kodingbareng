@@ -15,7 +15,7 @@ const Home = () => {
         <div className="font-figtree min-h-screen bg-biru overflow-hidden">
           <nav className="relative z-[999] top-0 px-4 py-4 flex justify-between items-center ">
             <a className="text-3xl font-bold leading-none w-40 md:w-60" href="">
-              <img src="/src/assets/img/logo.png" alt="" />
+              <img src="/img/logo.png" alt="" />
             </a>
             <Desktop />
           </nav>
@@ -108,19 +108,19 @@ const Home = () => {
           <div className="absolute  container opacity-50 bg-white w-full h-40 bottom-0 ">
             <div className="flex -space-x-[700px]">
               <div className="flex flex-1 my-14">
-                <img src="/src/assets/icon/icon 1.png" alt="" />
+                <img src="/icon/icon 1.png" alt="" />
                 <div className="mt-2 ml-2">
                   <h1>Web Development</h1>
                 </div>
               </div>
               <div className="flex flex-1 my-14 pl-8">
-                <img src="/src/assets/icon/icon 2.png" alt="" />
+                <img src="/icon/icon 2.png" alt="" />
                 <div className="mt-2 ml-2">
                   <h1>Game Development</h1>
                 </div>
               </div>
               <div className="flex flex-1 my-14 pl-12">
-                <img src="/src/assets/icon/icon 3.png" alt="" />
+                <img src="/icon/icon 3.png" alt="" />
                 <div className="mt-2 ml-2">
                   <h1>Software Engineer</h1>
                 </div>
@@ -217,7 +217,7 @@ const Home = () => {
         <div className="container">
           <div className="flex mt-10 text-figtree text-4xl font-bold text-dongker">
             <div className="flex align-middle">
-              <img src="/src/assets/icon/icon 4.png" alt="" />
+              <img src="/icon/icon 4.png" alt="" />
               <h1 className="inline-block align-middle my-auto ml-2">
                 Our Activity
               </h1>
@@ -228,7 +228,7 @@ const Home = () => {
               <div className="w-1/4 z-50 relative rounded-tl-[80px] rounded-bl-[80px] flex text-figtree justify-center text-center items-center text-4xl">
                 <div className="py-[142px] -z-10 inset-x-0  rounded-bl-[80px] rounded-tl-[80px] hover:bg-gradient-to-r from-biru to-blue-500  hover:scale-110 transition duration-300 ease-in-out hover:shadow-lg">
                   <div className="justify-center items-center  flex flex-col ">
-                    <img src="/src/assets/icon/aktivitas/Group 5.png" alt="" />
+                    <img src="/icon/aktivitas/Group 5.png" alt="" />
                     <h1 className="text-center w-60 font-bold">Discussion</h1>
                     <p className="text-sm font-base">
                       Share your insightfull story and make positive discussion
@@ -241,7 +241,7 @@ const Home = () => {
                 <div className="py-[142px] px-4 -z-10 inset-x-0 rounded-lg hover:bg-gradient-to-r from-biru to-blue-500 hover:scale-110 transition duration-300 ease-in-out hover:shadow-lg">
                   <div className="justify-center items-center  flex flex-col ">
                     <img
-                      src="/src/assets/icon/aktivitas/Group 5-1.png"
+                      src="/icon/aktivitas/Group 5-1.png"
                       alt=""
                     />
                     <h1 className="text-center w-60 font-bold">Chatting</h1>
@@ -256,7 +256,7 @@ const Home = () => {
                 <div className="py-[142px] px-4 -z-10 inset-x-0 rounded-lg hover:bg-gradient-to-r from-biru to-blue-500 hover:scale-110 transition duration-300 ease-in-out hover:shadow-lg">
                   <div className="justify-center items-center  flex flex-col ">
                     <img
-                      src="/src/assets/icon/aktivitas/Group 5-3.png"
+                      src="/icon/aktivitas/Group 5-3.png"
                       alt=""
                     />
                     <h1 className="text-center w-60 font-bold">Quiz</h1>
@@ -272,7 +272,7 @@ const Home = () => {
                 <div className="py-[142px] px-4 -z-10 inset-x-0  rounded-br-[80px] rounded-tr-[80px] hover:bg-gradient-to-r from-biru to-blue-500  hover:scale-110 transition duration-300 ease-in-out hover:shadow-lg">
                   <div className="justify-center items-center  flex flex-col ">
                     <img
-                      src="/src/assets/icon/aktivitas/Group 5-2.png"
+                      src="/icon/aktivitas/Group 5-2.png"
                       alt=""
                     />
                     <h1 className="text-center w-60 font-bold">Networking</h1>
@@ -289,7 +289,7 @@ const Home = () => {
           <div className="md:hidden mt-10 items-center justify-center space-y-5">
             <div className="bg-biru w-72 h-72  hover:border-biru hover:bg-white   mx-auto rounded-[50px] border-8 border-white shadow-md shadow-biru py-10 text-white hover:text-biru hover:scale-110 duration-200">
               <div className="justify-center items-center flex flex-col ">
-                <img src="/src/assets/icon/aktivitas/Group 5.png" alt="" />
+                <img src="/icon/aktivitas/Group 5.png" alt="" />
                 <h1 className=" text-2xl font-bold text-dongker text-center">
                   Discussion
                 </h1>
@@ -301,7 +301,7 @@ const Home = () => {
             </div>
             <div className="bg-biru w-72 h-72  rounded-[50px] mx-auto text-white hover:text-biru hover:scale-110 duration-200 hover:bg-white hover:border-biru border-8 border-white shadow-md shadow-biru py-10 ">
               <div className="justify-center items-center flex flex-col  ">
-                <img src="/src/assets/icon/aktivitas/Group 5-1.png" alt="" />
+                <img src="/icon/aktivitas/Group 5-1.png" alt="" />
                 <h1 className=" text-2xl font-bold text-dongker text-center">
                   Chatting{" "}
                 </h1>
@@ -313,7 +313,7 @@ const Home = () => {
             </div>
             <div className="bg-biru w-72 h-72  rounded-[50px] mx-auto text-white hover:text-biru hover:scale-110 duration-200 hover:bg-white hover:border-biru border-8 border-white shadow-md shadow-biru py-10 ">
               <div className="justify-center items-center flex flex-col  ">
-                <img src="/src/assets/icon/aktivitas/Group 5-3.png" alt="" />
+                <img src="/icon/aktivitas/Group 5-3.png" alt="" />
                 <h1 className=" text-2xl font-bold text-dongker text-center">
                   Quiz{" "}
                 </h1>
@@ -325,7 +325,7 @@ const Home = () => {
             </div>
             <div className="bg-biru w-72 h-72  rounded-[50px] mx-auto text-white hover:text-biru hover:scale-110 duration-200 hover:bg-white hover:border-biru border-8 border-white shadow-md shadow-biru py-10 ">
               <div className="justify-center items-center flex flex-col  ">
-                <img src="/src/assets/icon/aktivitas/Group 5-2.png" alt="" />
+                <img src="/icon/aktivitas/Group 5-2.png" alt="" />
                 <h1 className=" text-2xl font-bold text-dongker text-center">
                   Networking
                 </h1>
@@ -339,12 +339,12 @@ const Home = () => {
 
           <div className="md:flex md:mt-20">
             <div className="w-96 md:w-[1550px]">
-              <img src="/src/assets/img/Header Hero.png" alt="" />
+              <img src="/img/Header Hero.png" alt="" />
             </div>
             <div className="w-full text-left md:pl-40">
               <div className="flex items-center mt-10 justify-start">
                 <img
-                  src="/src/assets/icon/value/Group 4.png"
+                  src="/icon/value/Group 4.png"
                   alt=""
                   className="w-14"
                 />
@@ -361,7 +361,7 @@ const Home = () => {
               <div className="flex space-x-5 mt-14">
                 <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-50 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl w-48 h-48">
                   <div className="absolute z-[999] opacity-100 -mt-10 ml-4">
-                    <img src="/src/assets/icon/value/Group 5-3.png" alt="" />
+                    <img src="/icon/value/Group 5-3.png" alt="" />
                     <div className=" mt-2">
                       <h1 className=" text-dongker font-bold text-xl">
                         Education
@@ -375,7 +375,7 @@ const Home = () => {
                 </div>
                 <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-50 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl w-48 h-48">
                   <div className="absolute z-[999] opacity-100 px-2 -mt-10 ml-4">
-                    <img src="/src/assets/icon/value/Group 5.png" alt="" />
+                    <img src="/icon/value/Group 5.png" alt="" />
                     <div className=" mt-2">
                       <h1 className=" text-dongker font-bold text-xl">
                         Online Meet
@@ -391,7 +391,7 @@ const Home = () => {
               <div className="flex space-x-5 mt-14">
                 <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-50 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl  w-48 h-48">
                   <div className="absolute z-[999] opacity-100 pr-2 -mt-10 ml-4">
-                    <img src="/src/assets/icon/value/Group 5-1.png" alt="" />
+                    <img src="/icon/value/Group 5-1.png" alt="" />
                     <div className=" mt-2">
                       <h1 className=" text-dongker font-bold text-xl">Gift</h1>
                       <h1 className=" text-dongker mt-2 font-semibold text-md">
@@ -403,7 +403,7 @@ const Home = () => {
                 </div>
                 <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-50 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl w-48 h-48">
                   <div className="absolute z-[999] opacity-100 pr-4 -mt-10 ml-4">
-                    <img src="/src/assets/icon/value/Group 5-2.png" alt="" />
+                    <img src="/icon/value/Group 5-2.png" alt="" />
                     <div className=" mt-2">
                       <h1 className=" text-dongker font-bold text-xl">
                         Quesetion-Answer
@@ -424,7 +424,7 @@ const Home = () => {
               <div className="w-full text-left md:pl-24">
                 <div className="flex items-center ml-2  mt-10 justify-start">
                   <img
-                    src="/src/assets/icon/testi/Group 22.png"
+                    src="/icon/testi/Group 22.png"
                     className="w-14"
                     alt=""
                   />
@@ -439,7 +439,7 @@ const Home = () => {
                   </h1>
                 </div>
                 <div className="absolute ml-2">
-                  <img src="/src/assets/icon/testi/Group 22-1.png" alt="" />
+                  <img src="/icon/testi/Group 22-1.png" alt="" />
                 </div>
                 <div className="bg-biru w-full md:w-[600px] h-60 mt-10 rounded-2xl">
                   <div>
@@ -487,14 +487,14 @@ const Home = () => {
             </Swiper> */}
 
             <div className="-mr-20 mt-0 md:-mt-20 ">
-              <img src="/src/assets/icon/tfoot 1.png" alt="" />
+              <img src="/icon/tfoot 1.png" alt="" />
             </div>
           </div>
         </div>
         <div className="md:flex mt-20 md:px-24 items-center justify-center px-4">
           <div className="relative w-full items-center justify-center bg-gradient-to-r from-biru via-biru to-blue-400 h-[400px] md:h-[500px] rounded-[100px] border-[20px] shadow-2xl shadow-biru border-white text-white text-center py-16 md:py-32">
             <div className="flex justify-center items-center">
-              <img src="/src/assets/img/logo white.png" alt="" />
+              <img src="/img/logo white.png" alt="" />
             </div>
             <div className="font-bold font-figtree text-4xl">
               <h1 className="mt-2">
@@ -524,7 +524,7 @@ const Home = () => {
             <div className="text-center xl:flex xl:items-center xl:justify-between xl:text-left">
               <div className="xl:flex xl:items-center xl:justify-center">
                 <div className="flex items-center justify-center">
-                  <img src="/src/assets/img/logo.png" alt="" />
+                  <img src="/img/logo.png" alt="" />
                 </div>
                 <p className="mt-5 text-sm text-biru xl:ml-6 xl:mt-0">
                   © Copyright 2023
