@@ -95,7 +95,7 @@ const Home = () => {
                 <div className="relative md:absolute md:mt-64 md:pl-10 md:w-[800px] md:right-0">
                   <img
                     className="w-full"
-                    src="/src/assets/img/Header Hero.png"
+                    src="img/Header Hero.png"
                     alt=""
                   />
                 </div>
