@@ -1,3 +1,4 @@
+import Footer from "../Components/Footer/Index";
 import Desktop from "../Components/Nav/Desktop";
 // import Button from "../Components/Button/Index";
 import OwlCarousel from "react-owl-carousel";
@@ -130,7 +131,6 @@ const About = () => {
         <div className="md:hidden mt-10 -mb-20 flex justify-center items-center">
           <img src="/img/about/people.jpg" className="rounded-xl w-60" alt="" />
         </div>
-
         <div className="bg-slate-200 rounded-2xl w-full h-[500px] pt-36 md:pt-0 md:h-[700px] flex items-center right-0 md:ml-96">
           <div className="w-[900px] md:-ml-60 hidden md:flex">
             <img src="/img/about/people.jpg" className="rounded-xl" alt="" />
@@ -153,19 +153,281 @@ const About = () => {
         </div>
       </div>
 
-      <div className="px-40 mt-20 font-figtree">
+      <div className=" md:px-40 mt-20 font-figtree">
         <div className="text-center ">
-          <h1 className="font-bold text-3xl md:text-5xl">Populer Topics</h1>
+          <div className="relative inline-flex -rotate-12 md:mb-10 hover:rotate-0 duration-100 hover:scale-110">
+            <span className="absolute inset-x-0 bottom-0 border-b-[10px] rounded-lg border-dongker"></span>
+            <h1 className="relative text-4xl md:text-6xl font-bold text-slate-800 sm:text-6xl lg:text-7xl">
+              Popular Topics
+            </h1>
+          </div>
         </div>
 
-        <div className="bg-slate-200 w-[400px] h-[400px]">
-          <div>
-            <img src="" alt="" />
+        {/* <div className="bg-slate-200 md:px-0 rounded-xl w-[400px] h-[400px]"> */}
+
+        <div className="flex flex-wrap md:flex-nowrap md:gap-4 mt-10 justify-center px-10 md:px-0">
+          <div className="mb-5 p-4 md:w-1/3 bg-white rounded-lg itemBox">
+            <div className="rounded-lg overflow-hidden">
+              <div className="hover:scale-105 transition-transform duration-300 ease-in-out transform origin-center">
+                <div className="absolute bg-dongker text-white rounded-lg px-2 mt-4 ml-4">
+                  <h1>Website</h1>
+                </div>
+                <img
+                  src="/img/about/project1.jpg"
+                  className="rounded-2xl"
+                  alt=""
+                />
+              </div>
+              <h2 className="text-primary font-bold uppercase mt-3 text-dongker">
+                Programming
+              </h2>
+              <h3 className="font-semibold text-xl text-dark mt-2 mb-3">
+                Website Development
+              </h3>
+              <p className="font-medium text-base text-secondary">
+                Discuss the creation of websites and the technology that is
+                currently being used.
+              </p>
+            </div>
+          </div>
+          <div className="mb-5 p-4 md:w-1/3 bg-white rounded-lg itemBox">
+            <div className="rounded-lg overflow-hidden">
+              <div className="hover:scale-105 transition-transform duration-300 ease-in-out transform origin-center">
+                <div className="absolute bg-biru text-white rounded-lg px-2 mt-4 ml-4">
+                  <h1>Game Dev</h1>
+                </div>
+                <img
+                  src="/img/about/project1.jpg"
+                  className="rounded-2xl"
+                  alt=""
+                />
+              </div>
+              <h2 className="text-primary font-bold text-biru uppercase mt-3">
+                Programming
+              </h2>
+              <h3 className="font-semibold text-xl text-dark mt-2 mb-3">
+                Game Development
+              </h3>
+              <p className="font-medium text-base text-secondary">
+                In the future, we will share more experiences about game making
+                and technology.
+              </p>
+            </div>
+          </div>
+          <div className="mb-5 p-4 md:w-1/3 bg-white rounded-lg itemBox">
+            <div className="rounded-lg overflow-hidden">
+              <div className="hover:scale-105 transition-transform duration-300 ease-in-out transform origin-center">
+                <div className="absolute bg-blue-900 text-white rounded-lg px-2 mt-4 ml-4">
+                  <h1>Hardware</h1>
+                </div>
+                <img
+                  src="/img/about/project1.jpg"
+                  className="rounded-2xl"
+                  alt=""
+                />
+              </div>
+              <h2 className="text-primary text-blue-900 t font-bold uppercase mt-3">
+                Maintenance
+              </h2>
+              <h3 className="font-semibold text-xl text-dark mt-2 mb-3">
+                Hardware + Programming
+              </h3>
+              <p className="font-medium text-base text-secondary">
+                Discuss integration and hardware such as arduino depending on
+                the group's interest.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* </div> */}
+
+      <div className="bg-gradient-to-r from-biru via-blue-400 to-blue-500 font-figtree overflow-hidden w-full h-[400px] mt-10">
+        <div className="md:flex h-full justify-center items-center pt-5">
+          <div className="flex md:flex-none  justify-center items-center md:-space-x-0 -space-x-48 md:-ml-0 -ml-20">
+            <div className="px-40 w-96 text-center">
+              <img src="/icon/about/Group 31.png" alt="" />
+              <h1 className="text-white font-black text-6xl">+400</h1>
+              <h1 className="text-white font-md text-2xl">Participants</h1>
+            </div>
+            <div className="px-40 w-96 text-center">
+              <img src="/icon/about/Group 32.png" alt="" />
+              <h1 className="text-white font-black text-6xl">+100</h1>
+              <h1 className="text-white font-md text-2xl">Followers</h1>
+            </div>
+          </div>
+          <div className="flex md:flex-none  justify-center pt-8 items-center md:-space-x-0 -space-x-48 md:-ml-0 -ml-20">
+            <div className="px-40 w-96 text-center">
+              <img src="/icon/about/Group 33.png" alt="" />
+              <h1 className="text-white font-black text-6xl">+10K</h1>
+              <h1 className="text-white font-md text-2xl">Likes</h1>
+            </div>
+            <div className="px-40 w-96 text-center">
+              <img src="/icon/about/Group 34.png" alt="" />
+              <h1 className="text-white font-black text-6xl">24</h1>
+              <h1 className="text-white font-md text-2xl">Hours</h1>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="pt-96"></div>
+      <div className="font-figtree mt-20">
+        <div className="text-center ">
+          <div className="relative inline-flex rotate-12 md:mb-10 hover:rotate-0 duration-100 hover:scale-150">
+            <span className="absolute inset-x-0 bottom-0 border-b-[10px] md:border-b-[20px] rounded-lg border-dongker"></span>
+            <h1 className="relative text-2xl md:text-6xl font-bold text-slate-800 sm:text-6xl lg:text-7xl">
+              Admin & Founder
+            </h1>
+          </div>
+          <div className="md:flex items-center space-y-56 md:space-x-20 justify-center mx-auto px-24 mt-52 md:mt-20  md:px-32">
+            <div className="w-96">
+              <div className="bg-biru rounded-lg w-60 h-60 mt-28" />
+              <img
+                src="/img/about/Foto.jpg"
+                className="rounded-full w-60 -mt-[400px] -ml-20"
+                alt=""
+              />
+              <div className="text-white">
+                <h1 className="text-xl mt-4 -ml-[150px] md:-ml-[20px] font-bold">
+                  Fabyan Yastika Permana
+                </h1>
+                <h1 className="text-start pl-[10px]">Website Developer</h1>
+              </div>
+              <div className="flex space-x-5 w-10  justify-center items-center ml-[100px] mt-10">
+                <img
+                  src="/icon/about/socmed/Group 35.png"
+                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
+                  alt=""
+                />
+                <img
+                  src="/icon/about/socmed/Group 36.png"
+                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
+                  alt=""
+                />
+                <img
+                  src="/icon/about/socmed/Group 37.png"
+                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
+                  alt=""
+                />
+                <img
+                  src="/icon/about/socmed/Group 38.png"
+                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="w-96">
+              <div className="bg-biru rounded-lg w-60 h-60 md:-mt-28" />
+              <img
+                src="/img/about/Foto.jpg"
+                className="rounded-full w-60 -mt-[400px] -ml-20"
+                alt=""
+              />
+              <div className="text-white">
+                <h1 className="text-xl mt-4 -ml-[150px] md:-ml-[20px] font-bold">
+                  Fabyan Yastika Permana
+                </h1>
+                <h1 className="text-start pl-[10px]">Website Developer</h1>
+              </div>
+              <div className="flex space-x-5 w-10  justify-center items-center ml-[100px] mt-10">
+                <img
+                  src="/icon/about/socmed/Group 35.png"
+                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
+                  alt=""
+                />
+                <img
+                  src="/icon/about/socmed/Group 36.png"
+                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
+                  alt=""
+                />
+                <img
+                  src="/icon/about/socmed/Group 37.png"
+                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
+                  alt=""
+                />
+                <img
+                  src="/icon/about/socmed/Group 38.png"
+                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="w-96">
+              <div className="bg-biru rounded-lg w-60 h-60  md:-mt-28" />
+              <img
+                src="/img/about/Foto.jpg"
+                className="rounded-full w-60 -mt-[400px] -ml-20"
+                alt=""
+              />
+              <div className="text-white">
+                <h1 className="text-xl mt-4 -ml-[150px] md:-ml-[20px] font-bold">
+                  Fabyan Yastika Permana
+                </h1>
+                <h1 className="text-start pl-[10px]">Website Developer</h1>
+              </div>
+              <div className="flex space-x-5 w-10  justify-center items-center ml-[100px] mt-10">
+                <img
+                  src="/icon/about/socmed/Group 35.png"
+                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
+                  alt=""
+                />
+                <img
+                  src="/icon/about/socmed/Group 36.png"
+                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
+                  alt=""
+                />
+                <img
+                  src="/icon/about/socmed/Group 37.png"
+                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
+                  alt=""
+                />
+                <img
+                  src="/icon/about/socmed/Group 38.png"
+                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="w-96">
+              <div className="bg-biru rounded-lg w-60 h-60  md:-mt-28" />
+              <img
+                src="/img/about/Foto.jpg"
+                className="rounded-full w-60 -mt-[400px] -ml-20"
+                alt=""
+              />
+              <div className="text-white">
+                <h1 className="text-xl mt-4 -ml-[150px] md:-ml-[20px] font-bold">
+                  Fabyan Yastika Permana
+                </h1>
+                <h1 className="text-start pl-[10px]">Website Developer</h1>
+              </div>
+              <div className="flex space-x-5 w-10  justify-center items-center ml-[100px] mt-10">
+                <img
+                  src="/icon/about/socmed/Group 35.png"
+                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
+                  alt=""
+                />
+                <img
+                  src="/icon/about/socmed/Group 36.png"
+                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
+                  alt=""
+                />
+                <img
+                  src="/icon/about/socmed/Group 37.png"
+                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
+                  alt=""
+                />
+                <img
+                  src="/icon/about/socmed/Group 38.png"
+                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Footer />
     </>
   );
 };
