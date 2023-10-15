@@ -1,6 +1,7 @@
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import { EffectCreative } from "swiper/modules";
-import Nav from "../Components/Nav/Index";
+import Andro from "../Components/Nav/Andro";
+import Desktop from "../Components/Nav/Desktop";
 import "./Slide.css";
 // import "swiper/css";
 // import "swipercss/effect-creative";
@@ -16,20 +17,11 @@ const Home = () => {
             <a className="text-3xl font-bold leading-none w-40 md:w-60" href="">
               <img src="/src/assets/img/logo.png" alt="" />
             </a>
-            <div className="lg:hidden">
-              <button className="navbar-burger flex items-center text-kuning p-3">
-                <svg
-                  className="block h-4 w-4 fill-current"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>Mobile menu</title>
-                  <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                </svg>
-              </button>
-            </div>
-           <Nav />
+            <Desktop />
           </nav>
+          <Andro />
+
+
           <div className="backdrop-sepia-0 relative bg-white/30 blur-2xl">
             <div className="absolute -z-20 w-96 h-96 -mt-40 -ml-40 rounded-full bg-white"></div>
             <div className="absolute -z-20 w-[700px] h-[700px] right-0 -mt-20 -mr-60 rounded-full bg-dongker"></div>
@@ -110,6 +102,7 @@ const Home = () => {
               </div>
             </div>
           </section>
+          {/* </div> */}
         </div>
         <div className="hidden md:flex text-figtree font-bold text-slate-400 text-2xl">
           <div className="absolute  container opacity-50 bg-white w-full h-40 bottom-0 ">
@@ -135,7 +128,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-
         <div className=" navbar-menu relative z-50 hidden">
           <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
           <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
@@ -221,6 +213,7 @@ const Home = () => {
             </div>
           </nav>
         </div>
+
         <div className="container">
           <div className="flex mt-10 text-figtree text-4xl font-bold text-dongker">
             <div className="flex align-middle">
