@@ -1,24 +1,31 @@
 import Nav from "../Components/Nav/Index";
+import { useState } from "react";
+import { AiOutlineMenu, AiOutlineHome } from "react-icons/ai";
+
 const About = () => {
+  const [nav, setNav] = useState(false);
+  const handleNav = () => {
+    setNav(!nav);
+  };
   return (
     <>
-      <div className="">
+      <div className="absolute w-full md:z-0 -z-[9]">
         <div className="font-figtree min-h-screen bg-biru overflow-hidden">
-          <nav className="relative z-[999] top-0 px-4 py-4 flex justify-between items-center ">
+          <nav className="relative z-[10] top-0 px-4 py-4 flex justify-between items-center ">
             <a className="text-3xl font-bold leading-none w-40 md:w-60" href="">
               <img src="/src/assets/img/logo.png" alt="" />
             </a>
             <div className="lg:hidden">
-              <button className="navbar-burger flex items-center text-kuning p-3">
-                <svg
-                  className="block h-4 w-4 fill-current"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>Mobile menu</title>
-                  <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                </svg>
-              </button>
+              {/* <button className="navbar-burger flex items-center text-kuning p-3">
+              <svg
+                className="block h-4 w-4 fill-current"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Mobile menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+              </svg>
+            </button> */}
             </div>
             <Nav />
           </nav>
@@ -28,7 +35,7 @@ const About = () => {
             <div className="absolute -z-20  w-[400px] h-[400px] -mr-20 mt-[550px]  right-0 rounded-full bg-white"></div>
           </div>
 
-          <section className="relative z-[99] py-10">
+          <section className="relative z-[10] py-10">
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
               <div className="flex items-center justify-center">
                 <div className="relative">
@@ -54,6 +61,58 @@ const About = () => {
           </section>
         </div>
       </div>
+
+      {/* Nav Coba */}
+      <div>
+        <AiOutlineMenu
+          onClick={handleNav}
+          className="absolute top-4 right-4 z-[9999999999999999999999] md:hidden cursor-pointer"
+        />
+        {nav ? (
+          <div className="fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-[999999]">
+            <a
+              href="#main"
+              className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
+            >
+              <AiOutlineHome size={20} />
+              <span className="pl-4">Home</span>
+            </a>
+            <a
+              href="#main"
+              className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
+            >
+              <AiOutlineHome size={20} />
+              <span className="pl-4">Work</span>
+            </a>
+            <a
+              href="#main"
+              className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
+            >
+              <AiOutlineHome size={20} />
+              <span className="pl-4">Project</span>
+            </a>
+            <a
+              href="#main"
+              className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
+            >
+              <AiOutlineHome size={20} />
+              <span className="pl-4">Contact</span>
+            </a>
+            <a
+              href="#main"
+              className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
+            >
+              <AiOutlineHome size={20} />
+              <span className="pl-4">Resume</span>
+            </a>
+          </div>
+        ) : (
+          ""
+        )}
+      </div>
+
+      {/* End Nav Coba */}
+
       <div className="pt-96"></div>
     </>
   );
