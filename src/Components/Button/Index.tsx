@@ -1,5 +1,11 @@
-const Button = (props) => {
-  const { children = "" } = props;
+import React, { ReactNode } from "react";
+
+interface ButtonProps {
+  children: ReactNode;
+}
+
+const Button: React.FC<ButtonProps> = (props) => {
+  const { children } = props;
   return (
     <>
       <a
