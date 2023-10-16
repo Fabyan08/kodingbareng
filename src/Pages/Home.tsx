@@ -15,9 +15,12 @@ const Home = () => {
       <div className="overflow-x-hidden ">
         <div className="font-figtree min-h-screen bg-biru overflow-hidden">
           <nav className="relative z-[999] top-0 px-4 py-4 flex justify-between items-center ">
-            <a className="text-3xl font-bold leading-none w-40 md:w-60" href="">
+            <Link
+              className="text-3xl font-bold leading-none w-40 md:w-60"
+              to="/home"
+            >
               <img src="/img/logo.png" alt="" />
-            </a>
+            </Link>
             <Desktop />
           </nav>
           <Andro />
@@ -355,128 +358,128 @@ const Home = () => {
               </div>
             </div>
           </div>
-          </div>
-          {/* Value */}
-          <div className="md:flex md:mt-20">
+        </div>
+        {/* Value */}
+        <div className="md:flex md:mt-20">
           <div className="bg-slate-100 w-full h-60 absolute -z-[9999999] translate-y-64 animate-pulse" />
-            <div className="w-96 flex ml-10 mt-10 -mb-20 md:-mb-0 md:mt-0 md:ml-20 md:w-[1700px]">
-              <img src="/img/Group 9.png" alt="" />
+          <div className="w-96 flex ml-10 mt-10 -mb-20 md:-mb-0 md:mt-0 md:ml-20 md:w-[1700px]">
+            <img src="/img/Group 9.png" alt="" />
+          </div>
+          <div className="bg-biru hidden md:block w-[500px] rounded-r-[100px] h-20 absolute mt-[550px]"></div>
+          <div className="w-full text-left md:pl-40 container">
+            <div className="absolute -z-10 left-0 -ml-20 -mt-20">
+              <img src="/icon/design/round2.png" alt="" />
             </div>
-            <div className="w-full text-left md:pl-40 container">
-              <div className="absolute -z-10 left-0 -ml-20 -mt-20">
-                <img src="/icon/design/round2.png" alt="" />
-              </div>
-              <div className="flex items-center mt-10 justify-start">
-                <img src="/icon/value/Group 4.png" alt="" className="w-14" />
-                <h1 className="inline-block align-middle my-auto ml-2 text-biru font-bold text-2xl md:text-4xl">
-                  Our Value To Help You
-                </h1>
-              </div>
-              <div className="text-varian font-base text-lg mt-2">
-                <h1 className="max-w-md">
-                  We always want to provide the best value for you and your
-                  health, join us to maximize the benefits.
-                </h1>
-              </div>
-              <div className="flex space-x-5 mt-14">
-                <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-50 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl w-48 h-48">
-                  <div className="absolute z-[999] opacity-100 -mt-10 ml-4">
-                    <img src="/icon/value/Group 5-3.png" alt="" />
-                    <div className=" mt-2">
-                      <h1 className=" text-dongker font-bold text-xl">
-                        Education
-                      </h1>
-                      <h1 className=" text-dongker mt-2 text-base text-md">
-                        In here, you can have some education about coding also
-                        IT.
-                      </h1>
-                    </div>
-                  </div>
-                </div>
-                <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-50 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl w-48 h-48">
-                  <div className="absolute z-[999] opacity-100 px-2 -mt-10 ml-4">
-                    <img src="/icon/value/Group 5.png" alt="" />
-                    <div className=" mt-2">
-                      <h1 className=" text-dongker font-bold text-xl">
-                        Online Meet
-                      </h1>
-                      <h1 className=" text-dongker mt-2 text-base text-md">
-                        In some moment later, we will have some online meeting
-                        with each other.
-                      </h1>
-                    </div>
+            <div className="flex items-center mt-10 justify-start">
+              <img src="/icon/value/Group 4.png" alt="" className="w-14" />
+              <h1 className="inline-block align-middle my-auto ml-2 text-biru font-bold text-2xl md:text-4xl">
+                Our Value To Help You
+              </h1>
+            </div>
+            <div className="text-varian font-base text-lg mt-2">
+              <h1 className="max-w-md">
+                We always want to provide the best value for you and your
+                health, join us to maximize the benefits.
+              </h1>
+            </div>
+            <div className="flex space-x-5 mt-14">
+              <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-50 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl w-48 h-48">
+                <div className="absolute z-[999] opacity-100 -mt-10 ml-4">
+                  <img src="/icon/value/Group 5-3.png" alt="" />
+                  <div className=" mt-2">
+                    <h1 className=" text-dongker font-bold text-xl">
+                      Education
+                    </h1>
+                    <h1 className=" text-dongker mt-2 text-base text-md">
+                      In here, you can have some education about coding also IT.
+                    </h1>
                   </div>
                 </div>
               </div>
-              <div className="flex space-x-5 mt-14">
-                <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-50 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl  w-48 h-48">
-                  <div className="absolute z-[999] opacity-100 pr-2 -mt-10 ml-4">
-                    <img src="/icon/value/Group 5-1.png" alt="" />
-                    <div className=" mt-2">
-                      <h1 className=" text-dongker font-bold text-xl">Gift</h1>
-                      <h1 className=" text-dongker mt-2 text-base text-md">
-                        Don't worry about the gift, we will have some weekly
-                        quiz and has some gift too for winner.
-                      </h1>
-                    </div>
+              <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-50 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl w-48 h-48">
+                <div className="absolute z-[999] opacity-100 px-2 -mt-10 ml-4">
+                  <img src="/icon/value/Group 5.png" alt="" />
+                  <div className=" mt-2">
+                    <h1 className=" text-dongker font-bold text-xl">
+                      Online Meet
+                    </h1>
+                    <h1 className=" text-dongker mt-2 text-base text-md">
+                      In some moment later, we will have some online meeting
+                      with each other.
+                    </h1>
                   </div>
                 </div>
-                <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-50 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl w-48 h-48">
-                  <div className="absolute z-[999] opacity-100 pr-4 -mt-10 ml-4">
-                    <img src="/icon/value/Group 5-2.png" alt="" />
-                    <div className=" mt-2">
-                      <h1 className=" text-dongker font-bold text-xl">
-                        Question-Answer
-                      </h1>
-                      <h1 className=" text-dongker md:mt-2 text-base text-md">
-                        We discuss together about your question and give best
-                        answer.
-                      </h1>
-                    </div>
+              </div>
+            </div>
+            <div className="flex space-x-5 mt-14">
+              <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-50 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl  w-48 h-48">
+                <div className="absolute z-[999] opacity-100 pr-2 -mt-10 ml-4">
+                  <img src="/icon/value/Group 5-1.png" alt="" />
+                  <div className=" mt-2">
+                    <h1 className=" text-dongker font-bold text-xl">Gift</h1>
+                    <h1 className=" text-dongker mt-2 text-base text-md">
+                      Don't worry about the gift, we will have some weekly quiz
+                      and has some gift too for winner.
+                    </h1>
+                  </div>
+                </div>
+              </div>
+              <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-50 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl w-48 h-48">
+                <div className="absolute z-[999] opacity-100 pr-4 -mt-10 ml-4">
+                  <img src="/icon/value/Group 5-2.png" alt="" />
+                  <div className=" mt-2">
+                    <h1 className=" text-dongker font-bold text-xl">
+                      Question-Answer
+                    </h1>
+                    <h1 className=" text-dongker md:mt-2 text-base text-md">
+                      We discuss together about your question and give best
+                      answer.
+                    </h1>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div className="md:flex container">
-            <div className="items-center mt-10 flex-grow">
-              <div className="w-full text-left md:pl-24">
-                <div className="flex items-center ml-2  mt-10 justify-start">
-                  <img src="/icon/testi/Group 22.png" className="w-14" alt="" />
-                  <h1 className="inline-block align-middle my-auto ml-2 text-dongker font-bold text-2xl md:text-4xl">
-                    Testimonials About Us
+        <div className="md:flex container">
+          <div className="items-center mt-10 flex-grow">
+            <div className="w-full text-left md:pl-24">
+              <div className="flex items-center ml-2  mt-10 justify-start">
+                <img src="/icon/testi/Group 22.png" className="w-14" alt="" />
+                <h1 className="inline-block align-middle my-auto ml-2 text-dongker font-bold text-2xl md:text-4xl">
+                  Testimonials About Us
+                </h1>
+              </div>
+              <div className="text-dongker ml-4 font-base text-lg mt-2">
+                <h1 className="max-w-md">
+                  In the smallest case we always give your best, find out what
+                  other user have to say about us.
+                </h1>
+              </div>
+              <div className="absolute ml-2">
+                <img src="/icon/testi/Group 22-1.png" alt="" />
+              </div>
+              <div className="bg-biru w-full md:w-[600px] h-60 mt-10 rounded-2xl">
+                <div>
+                  <h1 className="p-10 text-white font-semibold text-md md:text-xl">
+                    “Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an un”
                   </h1>
-                </div>
-                <div className="text-dongker ml-4 font-base text-lg mt-2">
-                  <h1 className="max-w-md">
-                    In the smallest case we always give your best, find out what
-                    other user have to say about us.
-                  </h1>
-                </div>
-                <div className="absolute ml-2">
-                  <img src="/icon/testi/Group 22-1.png" alt="" />
-                </div>
-                <div className="bg-biru w-full md:w-[600px] h-60 mt-10 rounded-2xl">
-                  <div>
-                    <h1 className="p-10 text-white font-semibold text-md md:text-xl">
-                      “Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an un”
+                  <div className="bottom-0">
+                    <h1 className="px-10 -mt-4 text-white font-bold text-2xl">
+                      Dian Sastro
                     </h1>
-                    <div className="bottom-0">
-                      <h1 className="px-10 -mt-4 text-white font-bold text-2xl">
-                        Dian Sastro
-                      </h1>
-                      <h1 className="text-base px-10 -mt-2 text-white">
-                        Peserta Grup
-                      </h1>
-                    </div>
+                    <h1 className="text-base px-10 -mt-2 text-white">
+                      Peserta Grup
+                    </h1>
                   </div>
                 </div>
               </div>
             </div>
-            {/* <Swiper
+          </div>
+          {/* <Swiper
               grabCursor={true}
               effect={"creative"}
               creativeEffect={{
@@ -502,41 +505,41 @@ const Home = () => {
               <SwiperSlide>Slide 9</SwiperSlide>
             </Swiper> */}
 
-            <div className="-mr-20 mt-0 md:-mt-20 ">
-              <img src="/icon/tfoot 1.png" alt="" />
-            </div>
+          <div className="-mr-20 mt-0 md:-mt-20 ">
+            <img src="/icon/tfoot 1.png" alt="" />
           </div>
         </div>
-        <div className="md:flex mt-20 md:px-24 items-center justify-center px-4">
-          <div className="relative w-full items-center justify-center bg-gradient-to-r from-biru via-biru to-blue-400 h-[400px] md:h-[500px] rounded-[100px] border-[20px] shadow-2xl shadow-biru border-white text-white text-center py-16 md:py-32">
-            <div className="flex justify-center items-center">
-              <img src="/img/logo white.png" alt="" />
-            </div>
-            <div className="font-bold font-figtree text-4xl">
-              <h1 className="mt-2">
-                Get Started With{" "}
-                <span className="text-dongker">Koding Bareng</span>
-              </h1>
-            </div>
-            <div className="hidden md:inline">
-              <h1>
-                Discover about tips & trick about programming and <br /> discuss
-                also make positive network here!
-              </h1>
-            </div>
-            <div className="mt-8 ">
-              <a
-                className="lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-biru text-white border-white border-4  hover:rotate-0 hover:scale-125 hover:bg-gray-100 hover:text-biru hover:border-4 hover:border-biru text-xl font-bold rounded-xl transition duration-200"
-                href="pages/auth/signin.html"
-              >
-                Get Started{" "}
-              </a>
-            </div>
+      </div>
+      <div className="md:flex mt-20 md:px-24 items-center justify-center px-4">
+        <div className="relative w-full items-center justify-center bg-gradient-to-r from-biru via-biru to-blue-400 h-[400px] md:h-[500px] rounded-[100px] border-[20px] shadow-2xl shadow-biru border-white text-white text-center py-16 md:py-32">
+          <div className="flex justify-center items-center">
+            <img src="/img/logo white.png" alt="" />
+          </div>
+          <div className="font-bold font-figtree text-4xl">
+            <h1 className="mt-2">
+              Get Started With{" "}
+              <span className="text-dongker">Koding Bareng</span>
+            </h1>
+          </div>
+          <div className="hidden md:inline">
+            <h1>
+              Discover about tips & trick about programming and <br /> discuss
+              also make positive network here!
+            </h1>
+          </div>
+          <div className="mt-8 ">
+            <a
+              className="lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-biru text-white border-white border-4  hover:rotate-0 hover:scale-125 hover:bg-gray-100 hover:text-biru hover:border-4 hover:border-biru text-xl font-bold rounded-xl transition duration-200"
+              href="pages/auth/signin.html"
+            >
+              Get Started{" "}
+            </a>
           </div>
         </div>
-        {/* Footer */}
-        <Footer />
-        {/* <div className="mt-96"></div> */}
+      </div>
+      {/* Footer */}
+      <Footer />
+      {/* <div className="mt-96"></div> */}
       {/* </div> */}
     </>
   );
