@@ -87,7 +87,7 @@ const About = () => {
         <div className="font-figtree md:min-h-screen h-[550px] bg-biru overflow-hidden">
           <nav className="relative z-[10] top-0 px-4 py-4 flex justify-between items-center ">
             <a className="text-3xl font-bold leading-none w-40 md:w-60" href="">
-              <img src="/src/assets/img/logo.png" alt="" />
+              <img src="/img/logo.png" alt="" />
             </a>
             <div className="lg:hidden"></div>
             <Desktop />
