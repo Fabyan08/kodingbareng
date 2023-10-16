@@ -37,16 +37,6 @@ const Footer = () => {
 
               <li>
                 <Link
-                  to="/program"
-                  title=""
-                  className="text-sm text-biru transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
-                >
-                  Program
-                </Link>
-              </li>
-
-              <li>
-                <Link
                   to="/contact"
                   title=""
                   className="text-sm text-biru transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"

@@ -8,9 +8,9 @@ const Andro = () => {
   };
   return (
     <div>
-      <AiOutlineMenu
+      <AiOutlineMenu 
         onClick={handleNav}
-        className="absolute top-4 right-4 z-[9999999999999999999999] md:hidden cursor-pointer"
+        className="absolute top-4 text-white w-10 h-10 right-4 z-[9999999999999999999999] md:hidden cursor-pointer"
       />
       {nav ? (
         <div className="fixed w-full top-0 h-screen bg-white/90 flex flex-col justify-center items-center z-[999999]">
@@ -28,13 +28,7 @@ const Andro = () => {
             <AiOutlinePaperClip size={20} />
             <span className="pl-4">About Us</span>
           </Link>
-          <Link
-            to="/program"
-            className="rounded-full flex w-32 shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
-          >
-            <AiOutlineFolderOpen size={20} />
-            <span className="pl-4">Program</span>
-          </Link>
+          
           <Link
             to="/contact"
             className="rounded-full flex w-32 shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
