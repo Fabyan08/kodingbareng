@@ -12,7 +12,7 @@ const Home = () => {
   return (
     // <div className="font-figtree min-h-screen  bg-gradient-to-r from-white via-blue-400 to-blue-800">
     <>
-      <div className="overflow-x-hidden">
+      <div className="overflow-x-hidden ">
         <div className="font-figtree min-h-screen bg-biru overflow-hidden">
           <nav className="relative z-[999] top-0 px-4 py-4 flex justify-between items-center ">
             <a className="text-3xl font-bold leading-none w-40 md:w-60" href="">
@@ -21,7 +21,6 @@ const Home = () => {
             <Desktop />
           </nav>
           <Andro />
-
 
           <div className="backdrop-sepia-0 relative bg-white/30 blur-2xl">
             <div className="absolute -z-20 w-96 h-96 -mt-40 -ml-40 rounded-full bg-white"></div>
@@ -33,11 +32,16 @@ const Home = () => {
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
               <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
                 <div>
-                  <h1 className="text-6xl font-bold text-slate-800 sm:text-6xl lg:text-7xl">
+                  <h1 className="text-6xl font-bold text-slate-700 sm:text-6xl lg:text-7xl">
                     Let's Join Our{" "}
-                    <span className="text-white shadow-sm">Coding </span>
+                    <div className="flex">
+                      <span className="text-white shadow-sm">Coding </span>
+                      <div className="w-16 md:mt-4 ml-2 animate-bounce">
+                        <img src="/icon/design/code.png" alt="" />
+                      </div>
+                    </div>
                     <div className="relative inline-flex">
-                      <span className="absolute inset-x-0 bottom-0 border-b-[30px] border-dongker"></span>
+                      <span className="absolute inset-x-0 bottom-0 border-b-[20px] md:border-b-[30px] border-white md:border-dongker"></span>
                       <h1 className="relative text-6xl font-bold text-slate-800 sm:text-6xl lg:text-7xl">
                         Community.
                       </h1>
@@ -92,13 +96,11 @@ const Home = () => {
                     </a>
                   </div>
                 </div>
-
+                <div className="-mt-44 mr-2 absolute right-0">
+                  <img src="/icon/design/Frame 39.png" alt="" />
+                </div>
                 <div className="relative md:absolute md:mt-64 md:pl-10 md:w-[800px] md:right-0">
-                  <img
-                    className="w-full"
-                    src="img/Header Hero.png"
-                    alt=""
-                  />
+                  <img className="w-full" src="img/Header Hero.png" alt="" />
                 </div>
               </div>
             </div>
@@ -215,15 +217,27 @@ const Home = () => {
           </nav>
         </div>
 
-        <div className="container">
+        <div className="container ">
           <div className="flex mt-10 text-figtree text-4xl font-bold text-dongker">
             <div className="flex align-middle">
-              <img src="/icon/icon 4.png" alt="" />
+              <img src="/icon/icon 4.png" className="animate-bounce" alt="" />
               <h1 className="inline-block align-middle my-auto ml-2">
                 Our Activity
               </h1>
+
+              <div className="left-0 ml-3 border-[4px] animate-pulse md:hidden mt-[200px] z-[9999] bg-white rounded-full shadow-2xl border-biru w-5  h-5 absolute"></div>
+              <div className="left-0 ml-3 border-[4px] md:hidden animate-puls mt-[550px] z-[9999] bg-white rounded-full shadow-2xl border-biru w-5  h-5 absolute"></div>
+              <div className="left-0 ml-3 border-[4px] md:hidden animate-puls mt-[850px] z-[9999] bg-white rounded-full shadow-2xl border-biru w-5  h-5 absolute"></div>
+              <div className="absolute md:hidden animate-puls left-0 border-[4px] border-r-white -ml-4 mt-52 w-10 h-[1000px]"></div>
+              <div className="left-0 ml-3 md:hidden animate-puls border-[4px] mt-[1200px] z-[9999] bg-white rounded-full shadow-2xl border-biru w-5  h-5 absolute"></div>
+            </div>
+            <div className="overflow-hidden">
+              <div className="hidden md:block md:absolute right-0 mt-60 md:-mt-20 -z-[999999] -mr-20 ">
+                <img src="/icon/design/round1.png" alt="" />
+              </div>
             </div>
           </div>
+          {/* Desktop Mode */}
           <div className="md:flex mt-5  items-center justify-center hidden">
             <div className=" relative w-full items-center justify-center bg-gradient-to-r from-slate-200 via-blue-400 to-biru h-[500px] rounded-[100px] border-[20px] shadow-2xl shadow-biru border-white text-white flex">
               <div className="w-1/4 z-50 relative rounded-tl-[80px] rounded-bl-[80px] flex text-figtree justify-center text-center items-center text-4xl">
@@ -241,10 +255,7 @@ const Home = () => {
               <div className="w-1/4 z-50 relative rounded-tl-[80px] rounded-bl-[80px] flex text-figtree justify-center text-center items-center text-4xl">
                 <div className="py-[142px] px-4 -z-10 inset-x-0 rounded-lg hover:bg-gradient-to-r from-biru to-blue-500 hover:scale-110 transition duration-300 ease-in-out hover:shadow-lg">
                   <div className="justify-center items-center  flex flex-col ">
-                    <img
-                      src="/icon/aktivitas/Group 5-1.png"
-                      alt=""
-                    />
+                    <img src="/icon/aktivitas/Group 5-1.png" alt="" />
                     <h1 className="text-center w-60 font-bold">Chatting</h1>
                     <p className="text-sm font-base">
                       In here, you can make conversation with each other and
@@ -256,10 +267,7 @@ const Home = () => {
               <div className="w-1/4 z-50 relative rounded-tl-[80px] rounded-bl-[80px] flex text-figtree justify-center text-center items-center text-4xl">
                 <div className="py-[142px] px-4 -z-10 inset-x-0 rounded-lg hover:bg-gradient-to-r from-biru to-blue-500 hover:scale-110 transition duration-300 ease-in-out hover:shadow-lg">
                   <div className="justify-center items-center  flex flex-col ">
-                    <img
-                      src="/icon/aktivitas/Group 5-3.png"
-                      alt=""
-                    />
+                    <img src="/icon/aktivitas/Group 5-3.png" alt="" />
                     <h1 className="text-center w-60 font-bold">Quiz</h1>
                     <p className="text-sm font-base">
                       With interactif quiz, you can learn coding by real case
@@ -272,10 +280,7 @@ const Home = () => {
               <div className="w-1/4 z-50 relative rounded-tr-[80px] rounded-br-[80px] flex text-figtree justify-center text-center items-center text-4xl">
                 <div className="py-[142px] px-4 -z-10 inset-x-0  rounded-br-[80px] rounded-tr-[80px] hover:bg-gradient-to-r from-biru to-blue-500  hover:scale-110 transition duration-300 ease-in-out hover:shadow-lg">
                   <div className="justify-center items-center  flex flex-col ">
-                    <img
-                      src="/icon/aktivitas/Group 5-2.png"
-                      alt=""
-                    />
+                    <img src="/icon/aktivitas/Group 5-2.png" alt="" />
                     <h1 className="text-center w-60 font-bold">Networking</h1>
                     <p className="text-sm font-base">
                       Networking is one of the best way to improve your social
@@ -287,7 +292,11 @@ const Home = () => {
             </div>
           </div>
 
+          {/* Mobile Mode */}
           <div className="md:hidden mt-10 items-center justify-center space-y-5">
+            <div className="absolute -z-10 right-0 -mt-10">
+              <img src="/icon/design/round2.png" alt="" />
+            </div>
             <div className="bg-biru w-72 h-72  hover:border-biru hover:bg-white   mx-auto rounded-[50px] border-8 border-white shadow-md shadow-biru py-10 text-white hover:text-biru hover:scale-110 duration-200">
               <div className="justify-center items-center flex flex-col ">
                 <img src="/icon/aktivitas/Group 5.png" alt="" />
@@ -299,6 +308,9 @@ const Home = () => {
                   about IT with each other.
                 </p>
               </div>
+            </div>
+            <div className="absolute -z-10 right-0 -mt-10">
+              <img src="/icon/design/round2.png" alt="" />
             </div>
             <div className="bg-biru w-72 h-72  rounded-[50px] mx-auto text-white hover:text-biru hover:scale-110 duration-200 hover:bg-white hover:border-biru border-8 border-white shadow-md shadow-biru py-10 ">
               <div className="justify-center items-center flex flex-col  ">
@@ -312,6 +324,9 @@ const Home = () => {
                 </p>
               </div>
             </div>
+            <div className="absolute -z-10 right-0 -mt-10">
+              <img src="/icon/design/round2.png" alt="" />
+            </div>
             <div className="bg-biru w-72 h-72  rounded-[50px] mx-auto text-white hover:text-biru hover:scale-110 duration-200 hover:bg-white hover:border-biru border-8 border-white shadow-md shadow-biru py-10 ">
               <div className="justify-center items-center flex flex-col  ">
                 <img src="/icon/aktivitas/Group 5-3.png" alt="" />
@@ -323,6 +338,9 @@ const Home = () => {
                   improve your skill.
                 </p>
               </div>
+            </div>
+            <div className="absolute -z-10 right-0 -mt-10">
+              <img src="/icon/design/round2.png" alt="" />
             </div>
             <div className="bg-biru w-72 h-72  rounded-[50px] mx-auto text-white hover:text-biru hover:scale-110 duration-200 hover:bg-white hover:border-biru border-8 border-white shadow-md shadow-biru py-10 ">
               <div className="justify-center items-center flex flex-col  ">
@@ -337,18 +355,19 @@ const Home = () => {
               </div>
             </div>
           </div>
-
+          </div>
+          {/* Value */}
           <div className="md:flex md:mt-20">
-            <div className="w-96 md:w-[1550px]">
-              <img src="/img/Header Hero.png" alt="" />
+          <div className="bg-slate-100 w-full h-60 absolute -z-[9999999] translate-y-64 animate-pulse" />
+            <div className="w-96 flex ml-10 mt-10 -mb-20 md:-mb-0 md:mt-0 md:ml-20 md:w-[1700px]">
+              <img src="/img/Group 9.png" alt="" />
             </div>
-            <div className="w-full text-left md:pl-40">
+            <div className="w-full text-left md:pl-40 container">
+              <div className="absolute -z-10 left-0 -ml-20 -mt-20">
+                <img src="/icon/design/round2.png" alt="" />
+              </div>
               <div className="flex items-center mt-10 justify-start">
-                <img
-                  src="/icon/value/Group 4.png"
-                  alt=""
-                  className="w-14"
-                />
+                <img src="/icon/value/Group 4.png" alt="" className="w-14" />
                 <h1 className="inline-block align-middle my-auto ml-2 text-biru font-bold text-2xl md:text-4xl">
                   Our Value To Help You
                 </h1>
@@ -367,7 +386,7 @@ const Home = () => {
                       <h1 className=" text-dongker font-bold text-xl">
                         Education
                       </h1>
-                      <h1 className=" text-dongker mt-2 font-semibold text-md">
+                      <h1 className=" text-dongker mt-2 text-base text-md">
                         In here, you can have some education about coding also
                         IT.
                       </h1>
@@ -381,9 +400,9 @@ const Home = () => {
                       <h1 className=" text-dongker font-bold text-xl">
                         Online Meet
                       </h1>
-                      <h1 className=" text-dongker mt-2 font-semibold text-md">
+                      <h1 className=" text-dongker mt-2 text-base text-md">
                         In some moment later, we will have some online meeting
-                        just to speak with each other.
+                        with each other.
                       </h1>
                     </div>
                   </div>
@@ -395,9 +414,9 @@ const Home = () => {
                     <img src="/icon/value/Group 5-1.png" alt="" />
                     <div className=" mt-2">
                       <h1 className=" text-dongker font-bold text-xl">Gift</h1>
-                      <h1 className=" text-dongker mt-2 font-semibold text-md">
+                      <h1 className=" text-dongker mt-2 text-base text-md">
                         Don't worry about the gift, we will have some weekly
-                        quiz and has some gift too for the winner.
+                        quiz and has some gift too for winner.
                       </h1>
                     </div>
                   </div>
@@ -407,11 +426,11 @@ const Home = () => {
                     <img src="/icon/value/Group 5-2.png" alt="" />
                     <div className=" mt-2">
                       <h1 className=" text-dongker font-bold text-xl">
-                        Quesetion-Answer
+                        Question-Answer
                       </h1>
-                      <h1 className=" text-dongker md:mt-2 font-semibold text-md">
-                        In here, we work together to answer about your question
-                        and give it best answer.
+                      <h1 className=" text-dongker md:mt-2 text-base text-md">
+                        We discuss together about your question and give best
+                        answer.
                       </h1>
                     </div>
                   </div>
@@ -420,15 +439,11 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="md:flex">
+          <div className="md:flex container">
             <div className="items-center mt-10 flex-grow">
               <div className="w-full text-left md:pl-24">
                 <div className="flex items-center ml-2  mt-10 justify-start">
-                  <img
-                    src="/icon/testi/Group 22.png"
-                    className="w-14"
-                    alt=""
-                  />
+                  <img src="/icon/testi/Group 22.png" className="w-14" alt="" />
                   <h1 className="inline-block align-middle my-auto ml-2 text-dongker font-bold text-2xl md:text-4xl">
                     Testimonials About Us
                   </h1>
@@ -520,9 +535,9 @@ const Home = () => {
           </div>
         </div>
         {/* Footer */}
-       <Footer />
+        <Footer />
         {/* <div className="mt-96"></div> */}
-      </div>
+      {/* </div> */}
     </>
   );
 };

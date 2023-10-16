@@ -34,47 +34,65 @@ const options = {
 
 const items = [
   <div className="item" key={1}>
-    <div className="md:w-[700px]">
+    <div className="w-full px-2 h-96 md:h-0 md:w-[700px]">
       <div className="relative">
-        <div className="backdrop-blur-sm rounded-xl max-w-full absolute inset-0 bg-white/30"></div>
+        <div className="backdrop-blur-sm rounded-xl max-w-full absolute inset-0 bg-black/40"></div>
         <img
-          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80"
+          src="/img/about/coding.jpg"
           alt=""
-          className="rounded-xl"
+          className="rounded-xl h-[400px] md:h-[470px]"
         />
-        <h1 className="text-3xl text-dongker font-bold text-center absolute inset-0 flex items-center justify-center">
-          Programming & Coding
-        </h1>
+
+        <div>
+          <h1 className="text-3xl text-start text-white font-bold  absolute inset-0 flex items-center px-5">
+            Programming & Coding
+          </h1>
+          <h1 className="text-md mt-20  text-start text-white  absolute inset-0 flex items-center px-5">
+            Discussion about programming, also do coding! <br />
+          </h1>
+        </div>
       </div>
     </div>
   </div>,
   <div className="item" key={2}>
-    <div className="md:w-[700px]">
+    <div className="w-full px-2 h-96 md:h-0 md:w-[700px]">
       <div className="relative">
-        <div className="backdrop-blur-sm rounded-xl max-w-full absolute inset-0 bg-white/30"></div>
+        <div className="backdrop-blur-sm rounded-xl max-w-full absolute inset-0 bg-black/40"></div>
         <img
-          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80"
+          src="/img/about/arduino.jpg"
           alt=""
-          className="rounded-xl"
+          className="rounded-xl h-[400px] md:h-[470px]"
         />
-        <h1 className="text-3xl text-dongker font-bold text-center absolute inset-0 flex items-center justify-center">
-          Programming & Coding
-        </h1>
+
+        <div>
+          <h1 className="text-3xl text-start text-white font-bold  absolute inset-0 flex items-center px-5">
+            Software & Hardware
+          </h1>
+          <h1 className="text-md mt-20  text-start text-white  absolute inset-0 flex items-center px-5">
+            Discussion of the technology used to create software and hardware{" "}
+            <br />
+          </h1>
+        </div>
       </div>
     </div>
   </div>,
+
   <div className="item" key={3}>
-    <div className="md:w-[700px]">
+    <div className="w-full md:w-[700px]">
       <div className="relative">
-        <div className="backdrop-blur-sm rounded-xl max-w-full absolute inset-0 bg-white/30"></div>
-        <img
-          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80"
-          alt=""
-          className="rounded-xl"
-        />
-        <h1 className="text-3xl text-dongker font-bold text-center absolute inset-0 flex items-center justify-center">
-          Programming & Coding
-        </h1>
+        <div className="backdrop-blur-sm rounded-xl max-w-full absolute inset-0 bg-black/40"></div>
+        <img src="/img/about/community.jpg" alt="" className="rounded-xl h-[400px] md:h-full" />
+
+        <div>
+          <h1 className="text-3xl max-w-md text-start text-white font-bold  absolute inset-0 flex items-center px-5">
+            Community of Indonesia IT
+          </h1>
+          <h1 className="text-md mt-40  text-start text-white  absolute inset-0 flex items-center px-5">
+            As like the name, we are here to create a community for programmer
+            enthusiasts in Indonesia.
+            <br />
+          </h1>
+        </div>
       </div>
     </div>
   </div>,
@@ -97,7 +115,7 @@ const About = () => {
             <div className="absolute -z-20 w-[700px] h-[700px] right-0 hidden md:block -mt-20 -mr-60 rounded-full bg-dongker"></div>
             <div className="absolute -z-[20]  w-[400px] h-[400px] -mr-40 md:mt-[550px] mt-[500px]  right-0 rounded-full bg-white"></div>
           </div>
-          <div className="mt-20 px-1 md:px-0">
+          <div className="mt-4 md:mt-20 px-1  md:px-0">
             <OwlCarousel className="owl-theme" {...options}>
               {items}
             </OwlCarousel>
