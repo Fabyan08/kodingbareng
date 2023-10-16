@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { AiOutlineMenu, AiOutlineHome, AiOutlinePaperClip, AiOutlineFolderOpen, AiOutlinePhone } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineHome, AiOutlinePaperClip, AiOutlinePhone } from "react-icons/ai";
 const Andro = () => {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
