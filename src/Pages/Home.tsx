@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 const Home = () => {
   useEffect(() => {
     AOS.init();
-    once: true
+    once: true;
   }, []);
   return (
     // <div className="font-figtree min-h-screen  bg-gradient-to-r from-white via-blue-400 to-blue-800">
@@ -450,7 +450,8 @@ const Home = () => {
               <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-75 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl w-48 h-48">
                 <div
                   data-aos="fade-up"
-                  data-aos-anchor-placement="top-bottom" data-aos-duration="1000"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-duration="1000"
                   className="absolute z-[999] opacity-100 -mt-10 ml-4"
                 >
                   <img src="/icon/value/Group 5-3.png" alt="" />
@@ -465,8 +466,12 @@ const Home = () => {
                 </div>
               </div>
               <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-75 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl w-48 h-48">
-                <div data-aos="fade-up"
-                  data-aos-anchor-placement="top-bottom" data-aos-duration="1500" className="absolute z-[999] opacity-100 px-2 -mt-10 ml-4">
+                <div
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-duration="1500"
+                  className="absolute z-[999] opacity-100 px-2 -mt-10 ml-4"
+                >
                   <img src="/icon/value/Group 5.png" alt="" />
                   <div className=" mt-2">
                     <h1 className=" text-dongker font-bold text-xl">
@@ -482,8 +487,12 @@ const Home = () => {
             </div>
             <div className="flex space-x-5 mt-14">
               <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-75 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl  w-48 h-48">
-                <div data-aos="fade-up"
-                  data-aos-anchor-placement="top-bottom" data-aos-duration="2000" className="absolute z-[999] opacity-100 pr-2 -mt-10 ml-4">
+                <div
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-duration="2000"
+                  className="absolute z-[999] opacity-100 pr-2 -mt-10 ml-4"
+                >
                   <img src="/icon/value/Group 5-1.png" alt="" />
                   <div className=" mt-2">
                     <h1 className=" text-dongker font-bold text-xl">Gift</h1>
@@ -495,8 +504,12 @@ const Home = () => {
                 </div>
               </div>
               <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-75 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl w-48 h-48">
-                <div data-aos="fade-up"
-                  data-aos-anchor-placement="top-bottom" data-aos-duration="2500" className="absolute z-[999] opacity-100 pr-4 -mt-10 ml-4">
+                <div
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-duration="2500"
+                  className="absolute z-[999] opacity-100 pr-4 -mt-10 ml-4"
+                >
                   <img src="/icon/value/Group 5-2.png" alt="" />
                   <div className=" mt-2">
                     <h1 className=" text-dongker font-bold text-xl">
@@ -550,10 +563,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-        
 
           <div className="-mr-20 mt-0 md:-mt-20">
-            
             <img src="/icon/tfoot 1.png" alt="" />
           </div>
         </div>
@@ -578,7 +589,7 @@ const Home = () => {
           <div className="mt-8 animate-bounce">
             <a
               className="lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-biru text-white border-white border-4  hover:rotate-0 hover:scale-125 hover:bg-gray-100 hover:text-biru hover:border-4 hover:border-biru text-xl font-bold rounded-xl transition duration-200"
-              href="pages/auth/signin.html"
+              href="https://chat.whatsapp.com/I6o3EBWVouSCl2m0v5XOKv"
             >
               Get Started{" "}
             </a>
