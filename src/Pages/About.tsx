@@ -448,7 +448,7 @@ const About = () => {
                 alt=""
               />
               <div className="text-white">
-                <h1 className="text-xl mt-4 -ml-[150px] md:-ml-[20px] font-bold">
+                <h1 className="text-xl mt-4 -ml-[150px] md:ml-[1px] font-bold">
                   Fabyan Yastika Permana
                 </h1>
                 <h1 className="text-start pl-[10px]">Website Developer</h1>
@@ -462,7 +462,7 @@ const About = () => {
                 alt=""
               />
               <div className="text-white">
-                <h1 className="text-xl mt-4 -ml-[150px] md:-ml-[20px] font-bold">
+                <h1 className="text-xl mt-4 -ml-[150px] md:ml-[1px] font-bold">
                   Abhinaya Nuzuluzzuhdi
                 </h1>
                 <h1 className="text-start pl-[10px]">Data Analyst</h1>
@@ -476,7 +476,7 @@ const About = () => {
                 alt=""
               />
               <div className="text-white">
-                <h1 className="text-xl mt-4 -ml-[150px] md:-ml-[20px] font-bold">
+                <h1 className="text-xl mt-4 -ml-[150px] md:ml-[1px] font-bold">
                   Fabyan Yastika Permana
                 </h1>
                 <h1 className="text-start pl-[10px]">Website Developer</h1>
@@ -490,7 +490,7 @@ const About = () => {
                 alt=""
               />
               <div className="text-white">
-                <h1 className="text-xl mt-4 -ml-[150px] md:-ml-[20px] font-bold">
+                <h1 className="text-xl mt-4 -ml-[150px] md:ml-[1px] font-bold">
                   Fabyan Yastika Permana
                 </h1>
                 <h1 className="text-start pl-[10px]">Website Developer</h1>
@@ -504,7 +504,7 @@ const About = () => {
                 alt=""
               />
               <div className="text-white">
-                <h1 className="text-xl mt-4 -ml-[150px] md:-ml-[20px] font-bold">
+                <h1 className="text-xl mt-4 -ml-[150px] md:ml-[1px] font-bold">
                   Fabyan Yastika Permana
                 </h1>
                 <h1 className="text-start pl-[10px]">Website Developer</h1>
