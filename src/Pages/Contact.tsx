@@ -20,7 +20,7 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
 
     const serviceId = "service_52trfy9";
@@ -139,7 +139,7 @@ const Contact = () => {
           <form
             action="for"
             className="space-y-5 emailForm"
-            onSubmit={handleSubmit}
+            // onSubmit={handleSubmit}
           >
             <div className="md:pl-10 pl-4 text-slate-500 text-2xl font-bold">
               <h1>Information</h1>
@@ -172,6 +172,7 @@ const Contact = () => {
             </div>
             <div className="md:ml-10 ml-5">
               <button
+                onClick={handleSubmit}
                 className="lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-biru text-white border-white border-4 rotate-${rotate} hover:rotate-0 hover:scale-125 hover:bg-gray-100 hover:text-biru hover:border-4 hover:border-biru text-xl font-bold rounded-xl transition duration-200"
                 children="Send"
               />
