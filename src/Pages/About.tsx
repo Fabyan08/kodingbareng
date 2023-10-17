@@ -438,69 +438,27 @@ const About = () => {
                 alt=""
               />
               <div className="text-white">
-                <h1 className="text-xl mt-4 -ml-[150px] md:-ml-[20px] font-bold">
+                <h1 className="text-xl mt-4 -ml-[150px] md:-ml-[50px] font-bold">
                   Fabyan Yastika Permana
                 </h1>
                 <h1 className="text-start pl-[10px]">Website Developer</h1>
               </div>
-              <div className="flex space-x-5 w-10  justify-center items-center ml-[100px] mt-10">
-                <img
-                  src="/icon/about/socmed/Group 35.png"
-                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
-                  alt=""
-                />
-                <img
-                  src="/icon/about/socmed/Group 36.png"
-                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
-                  alt=""
-                />
-                <img
-                  src="/icon/about/socmed/Group 37.png"
-                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
-                  alt=""
-                />
-                <img
-                  src="/icon/about/socmed/Group 38.png"
-                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
-                  alt=""
-                />
-              </div>
+             
             </div>
             <div className="w-96">
               <div className="bg-biru rounded-lg w-60 h-60 md:-mt-28" />
               <img
-                src="/img/about/Foto.jpg"
+                src="/img/about/abhi.jpeg"
                 className="rounded-full w-60 -mt-[400px] -ml-20"
                 alt=""
               />
               <div className="text-white">
-                <h1 className="text-xl mt-4 -ml-[150px] md:-ml-[20px] font-bold">
-                  Fabyan Yastika Permana
+                <h1 className="text-xl mt-4 -ml-[150px] md:-ml-[60px] font-bold">
+                  Abhinaya Nuzuluzzuhdi
                 </h1>
-                <h1 className="text-start pl-[10px]">Website Developer</h1>
+                <h1 className="text-start pl-[10px]">Data Analyst</h1>
               </div>
-              <div className="flex space-x-5 w-10  justify-center items-center ml-[100px] mt-10">
-                <img
-                  src="/icon/about/socmed/Group 35.png"
-                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
-                  alt=""
-                />
-                <img
-                  src="/icon/about/socmed/Group 36.png"
-                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
-                  alt=""
-                />
-                <img
-                  src="/icon/about/socmed/Group 37.png"
-                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
-                  alt=""
-                />
-                <img
-                  src="/icon/about/socmed/Group 38.png"
-                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
-                  alt=""
-                />
-              </div>
+             
             </div>
             <div className="w-96">
               <div className="bg-biru rounded-lg w-60 h-60  md:-mt-28" />
@@ -510,33 +468,12 @@ const About = () => {
                 alt=""
               />
               <div className="text-white">
-                <h1 className="text-xl mt-4 -ml-[150px] md:-ml-[20px] font-bold">
+                <h1 className="text-xl mt-4 -ml-[150px] md:-ml-[50px] font-bold">
                   Fabyan Yastika Permana
                 </h1>
                 <h1 className="text-start pl-[10px]">Website Developer</h1>
               </div>
-              <div className="flex space-x-5 w-10  justify-center items-center ml-[100px] mt-10">
-                <img
-                  src="/icon/about/socmed/Group 35.png"
-                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
-                  alt=""
-                />
-                <img
-                  src="/icon/about/socmed/Group 36.png"
-                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
-                  alt=""
-                />
-                <img
-                  src="/icon/about/socmed/Group 37.png"
-                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
-                  alt=""
-                />
-                <img
-                  src="/icon/about/socmed/Group 38.png"
-                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
-                  alt=""
-                />
-              </div>
+             
             </div>
             <div className="w-96">
               <div className="bg-biru rounded-lg w-60 h-60  md:-mt-28" />
@@ -546,33 +483,12 @@ const About = () => {
                 alt=""
               />
               <div className="text-white">
-                <h1 className="text-xl mt-4 -ml-[150px] md:-ml-[20px] font-bold">
+                <h1 className="text-xl mt-4 -ml-[150px] md:-ml-[50px] font-bold">
                   Fabyan Yastika Permana
                 </h1>
                 <h1 className="text-start pl-[10px]">Website Developer</h1>
               </div>
-              <div className="flex space-x-5 w-10  justify-center items-center ml-[100px] mt-10">
-                <img
-                  src="/icon/about/socmed/Group 35.png"
-                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
-                  alt=""
-                />
-                <img
-                  src="/icon/about/socmed/Group 36.png"
-                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
-                  alt=""
-                />
-                <img
-                  src="/icon/about/socmed/Group 37.png"
-                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
-                  alt=""
-                />
-                <img
-                  src="/icon/about/socmed/Group 38.png"
-                  className=" opacity-75 hover:opacity-100 hover:scale-110 duration-150"
-                  alt=""
-                />
-              </div>
+              
             </div>
           </div>
         </div>
