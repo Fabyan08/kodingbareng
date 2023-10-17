@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { AiFillInfoCircle } from "react-icons/ai";
+import { AiFillInfoCircle, AiOutlineUp } from "react-icons/ai";
 
 import { motion } from "framer-motion";
 const Home = () => {
@@ -18,6 +18,11 @@ const Home = () => {
     // <div className="font-figtree min-h-screen  bg-gradient-to-r from-white via-blue-400 to-blue-800">
     <>
       <div className="overflow-x-hidden ">
+        <div data-aos="fade-up" data-aos-duration="2000" className="bg-blue-500 flex items-center justify-center w-10 h-10 rounded-lg right-5 bottom-10 z-[99999999999999999999999999999999] fixed">
+          <a href="#">
+            <AiOutlineUp className="text-white text-2xl font-black" />
+          </a>
+        </div>
         <div className="font-figtree min-h-screen bg-biru overflow-hidden">
           <nav
             className="relative z-[999] top-0 px-4 py-4 flex justify-between items-center "

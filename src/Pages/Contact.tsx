@@ -3,6 +3,8 @@ import Footer from "../Components/Footer/Index";
 import Andro from "../Components/Nav/Andro";
 import Desktop from "../Components/Nav/Desktop";
 import { useEffect, useState } from "react";
+import {  AiOutlineUp } from "react-icons/ai";
+
 
 import "aos/dist/aos.css";
 
@@ -53,6 +55,15 @@ const Contact = () => {
   return (
     <>
       <div className="w-full md:z-0 -z-[9]">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          className="bg-blue-500 flex items-center justify-center w-10 h-10 rounded-lg right-5 bottom-10 z-[99999999999999999999999999999999] fixed"
+        >
+          <a href="#">
+            <AiOutlineUp className="text-white text-2xl font-black" />
+          </a>
+        </div>
         <div className="font-figtree md:min-h-screen h-[550px] bg-biru overflow-hidden">
           <nav
             data-aos="fade-down"

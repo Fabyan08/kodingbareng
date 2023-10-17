@@ -11,6 +11,7 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import { motion } from "framer-motion";
 import "aos/dist/aos.css";
+import { AiOutlineUp } from "react-icons/ai";
 
 import AOS from "aos";
 
@@ -155,6 +156,15 @@ const About = () => {
   return (
     <>
       <div className="w-full md:z-0 -z-[9]">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          className="bg-blue-500 flex items-center justify-center w-10 h-10 rounded-lg right-5 bottom-10 z-[99999999999999999999999999999999] fixed"
+        >
+          <a href="#">
+            <AiOutlineUp className="text-white text-2xl font-black" />
+          </a>
+        </div>
         <div className="font-figtree md:min-h-screen h-[550px] bg-biru overflow-hidden">
           <nav
             className="relative z-[10] top-0 px-4 py-4 flex justify-between items-center "
@@ -443,7 +453,6 @@ const About = () => {
                 </h1>
                 <h1 className="text-start pl-[10px]">Website Developer</h1>
               </div>
-             
             </div>
             <div className="w-96">
               <div className="bg-biru rounded-lg w-60 h-60 md:-mt-28" />
@@ -458,7 +467,6 @@ const About = () => {
                 </h1>
                 <h1 className="text-start pl-[10px]">Data Analyst</h1>
               </div>
-             
             </div>
             <div className="w-96">
               <div className="bg-biru rounded-lg w-60 h-60  md:-mt-28" />
@@ -473,7 +481,6 @@ const About = () => {
                 </h1>
                 <h1 className="text-start pl-[10px]">Website Developer</h1>
               </div>
-             
             </div>
             <div className="w-96">
               <div className="bg-biru rounded-lg w-60 h-60  md:-mt-28" />
@@ -488,7 +495,6 @@ const About = () => {
                 </h1>
                 <h1 className="text-start pl-[10px]">Website Developer</h1>
               </div>
-              
             </div>
           </div>
         </div>
