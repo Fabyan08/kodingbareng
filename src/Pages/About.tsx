@@ -439,7 +439,7 @@ const About = () => {
               Admin & Founder
             </h1>
           </div>
-          <div className="md:flex items-center space-y-56 md:space-x-20 justify-center mx-auto px-24 mt-52 md:mt-20  md:px-32">
+          <div className="md:flex items-center space-y-56 md:space-x-10 md:ml-20  justify-center mx-auto px-24 mt-52 md:mt-20  md:px-32">
             <div className="w-96">
               <div className="bg-biru rounded-lg w-60 h-60 mt-28" />
               <img
@@ -466,6 +466,20 @@ const About = () => {
                   Abhinaya Nuzuluzzuhdi
                 </h1>
                 <h1 className="text-start pl-[10px]">Data Analyst</h1>
+              </div>
+            </div>
+            <div className="w-96">
+              <div className="bg-biru rounded-lg w-60 h-60  md:-mt-28" />
+              <img
+                src="/img/about/Foto.jpg"
+                className="rounded-full w-60 -mt-[400px] -ml-20"
+                alt=""
+              />
+              <div className="text-white">
+                <h1 className="text-xl mt-4 -ml-[150px] md:-ml-[20px] font-bold">
+                  Fabyan Yastika Permana
+                </h1>
+                <h1 className="text-start pl-[10px]">Website Developer</h1>
               </div>
             </div>
             <div className="w-96">
