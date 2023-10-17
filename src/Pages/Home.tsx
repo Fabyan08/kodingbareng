@@ -1,25 +1,42 @@
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { EffectCreative } from "swiper/modules";
 import Footer from "../Components/Footer/Index";
 import Andro from "../Components/Nav/Andro";
 import Desktop from "../Components/Nav/Desktop";
 import "./Slide.css";
-// import "swiper/css";
-// import "swipercss/effect-creative";
 import { Link } from "react-router-dom";
-// import Button from "../Components/Button/Index";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { AiFillInfoCircle } from "react-icons/ai";
+
+import { motion } from "framer-motion";
 const Home = () => {
+  useEffect(() => {
+    AOS.init();
+    once: true
+  }, []);
   return (
     // <div className="font-figtree min-h-screen  bg-gradient-to-r from-white via-blue-400 to-blue-800">
     <>
       <div className="overflow-x-hidden ">
         <div className="font-figtree min-h-screen bg-biru overflow-hidden">
-          <nav className="relative z-[999] top-0 px-4 py-4 flex justify-between items-center ">
+          <nav
+            className="relative z-[999] top-0 px-4 py-4 flex justify-between items-center "
+            data-aos="fade-down"
+            data-aos-duration="700"
+          >
             <Link
               className="text-3xl font-bold leading-none w-40 md:w-60"
               to="/home"
             >
-              <img src="/img/logo.png" alt="" />
+              <motion.div
+                whileHover={{ scale: 1.2 }}
+                whileTap={{
+                  scale: 0.8,
+                  borderRadius: "100%",
+                }}
+              >
+                <img src="/img/logo.png" alt="" />
+              </motion.div>
             </Link>
             <Desktop />
           </nav>
@@ -43,12 +60,22 @@ const Home = () => {
                         <img src="/icon/design/code.png" alt="" />
                       </div>
                     </div>
-                    <div className="relative inline-flex">
-                      <span className="absolute inset-x-0 bottom-0 border-b-[20px] md:border-b-[30px] border-white md:border-dongker"></span>
-                      <h1 className="relative text-6xl font-bold text-slate-800 sm:text-6xl lg:text-7xl">
-                        Community.
-                      </h1>
-                    </div>
+                    <motion.div
+                      initial={{ scale: 0 }}
+                      animate={{ rotate: 0, scale: 1 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 260,
+                        damping: 50,
+                      }}
+                    >
+                      <div className="relative inline-flex">
+                        <span className="absolute inset-x-0 bottom-0 border-b-[20px] md:border-b-[30px] border-white md:border-dongker"></span>
+                        <h1 className="relative text-6xl font-bold text-slate-800 sm:text-6xl lg:text-7xl">
+                          Community.
+                        </h1>
+                      </div>
+                    </motion.div>
                   </h1>
 
                   <p className="mt-8 text-base text-black sm:text-xl">
@@ -103,7 +130,15 @@ const Home = () => {
                   <img src="/icon/design/Frame 39.png" alt="" />
                 </div>
                 <div className="relative md:absolute md:mt-64 md:pl-10 md:w-[800px] md:right-0">
-                  <img className="w-full" src="img/Header Hero.png" alt="" />
+                  <motion.div
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{
+                      scale: 0.8,
+                      borderRadius: "100%",
+                    }}
+                  >
+                    <img className="w-full" src="img/Header Hero.png" alt="" />
+                  </motion.div>
                 </div>
               </div>
             </div>
@@ -112,20 +147,32 @@ const Home = () => {
         </div>
         <div className="hidden md:flex text-figtree font-bold text-slate-400 text-2xl">
           <div className="absolute  container opacity-50 bg-white w-full h-40 bottom-0 ">
-            <div className="flex -space-x-[700px]">
-              <div className="flex flex-1 my-14">
+            <div className=" flex -space-x-[700px]">
+              <div
+                data-aos="fade-right"
+                data-aos-duration="2300"
+                className="flex flex-1 my-14"
+              >
                 <img src="/icon/icon 1.png" alt="" />
                 <div className="mt-2 ml-2">
                   <h1>Web Development</h1>
                 </div>
               </div>
-              <div className="flex flex-1 my-14 pl-8">
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1500"
+                className="flex flex-1 my-14 pl-10"
+              >
                 <img src="/icon/icon 2.png" alt="" />
                 <div className="mt-2 ml-2">
                   <h1>Game Development</h1>
                 </div>
               </div>
-              <div className="flex flex-1 my-14 pl-12">
+              <div
+                data-aos="fade-right"
+                data-aos-duration="700"
+                className="flex flex-1 my-14 pl-14"
+              >
                 <img src="/icon/icon 3.png" alt="" />
                 <div className="mt-2 ml-2">
                   <h1>Software Engineer</h1>
@@ -363,9 +410,26 @@ const Home = () => {
         <div className="md:flex md:mt-20">
           <div className="bg-slate-100 w-full h-60 absolute -z-[9999999] translate-y-64 animate-pulse" />
           <div className="w-96 flex ml-10 mt-10 -mb-20 md:-mb-0 md:mt-0 md:ml-20 md:w-[1700px]">
-            <img src="/img/Group 9.png" alt="" />
+            <motion.div
+              whileHover={{ scale: 1.2 }}
+              whileTap={{
+                scale: 0.8,
+                borderRadius: "100%",
+              }}
+            >
+              <img src="/img/Group 9.png" alt="" />
+            </motion.div>
           </div>
-          <div className="bg-biru hidden md:block w-[500px] rounded-r-[100px] h-20 absolute mt-[550px]"></div>
+          <div
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            className="bg-biru hidden md:block w-[600px] rounded-r-[100px] h-fit py-10 absolute mt-[550px]"
+          >
+            <div className="flex items-end justify-end pr-2">
+              <AiFillInfoCircle className="text-white" size={60} />{" "}
+            </div>
+          </div>
           <div className="w-full text-left md:pl-40 container">
             <div className="absolute -z-10 left-0 -ml-20 -mt-20">
               <img src="/icon/design/round2.png" alt="" />
@@ -383,8 +447,12 @@ const Home = () => {
               </h1>
             </div>
             <div className="flex space-x-5 mt-14">
-              <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-50 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl w-48 h-48">
-                <div className="absolute z-[999] opacity-100 -mt-10 ml-4">
+              <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-75 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl w-48 h-48">
+                <div
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom" data-aos-duration="1000"
+                  className="absolute z-[999] opacity-100 -mt-10 ml-4"
+                >
                   <img src="/icon/value/Group 5-3.png" alt="" />
                   <div className=" mt-2">
                     <h1 className=" text-dongker font-bold text-xl">
@@ -396,8 +464,9 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-50 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl w-48 h-48">
-                <div className="absolute z-[999] opacity-100 px-2 -mt-10 ml-4">
+              <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-75 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl w-48 h-48">
+                <div data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom" data-aos-duration="1500" className="absolute z-[999] opacity-100 px-2 -mt-10 ml-4">
                   <img src="/icon/value/Group 5.png" alt="" />
                   <div className=" mt-2">
                     <h1 className=" text-dongker font-bold text-xl">
@@ -412,8 +481,9 @@ const Home = () => {
               </div>
             </div>
             <div className="flex space-x-5 mt-14">
-              <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-50 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl  w-48 h-48">
-                <div className="absolute z-[999] opacity-100 pr-2 -mt-10 ml-4">
+              <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-75 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl  w-48 h-48">
+                <div data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom" data-aos-duration="2000" className="absolute z-[999] opacity-100 pr-2 -mt-10 ml-4">
                   <img src="/icon/value/Group 5-1.png" alt="" />
                   <div className=" mt-2">
                     <h1 className=" text-dongker font-bold text-xl">Gift</h1>
@@ -424,8 +494,9 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-50 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl w-48 h-48">
-                <div className="absolute z-[999] opacity-100 pr-4 -mt-10 ml-4">
+              <div className="relative z-10 duration-200 hover:scale-100 bg-biru opacity-75 hover:opacity-100 hover:bg-white hover:shadow-xl hover:shadow-biru rounded-2xl w-48 h-48">
+                <div data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom" data-aos-duration="2500" className="absolute z-[999] opacity-100 pr-4 -mt-10 ml-4">
                   <img src="/icon/value/Group 5-2.png" alt="" />
                   <div className=" mt-2">
                     <h1 className=" text-dongker font-bold text-xl">
@@ -479,33 +550,10 @@ const Home = () => {
               </div>
             </div>
           </div>
-          {/* <Swiper
-              grabCursor={true}
-              effect={"creative"}
-              creativeEffect={{
-                prev: {
-                  shadow: true,
-                  translate: [0, 0, -400],
-                },
-                next: {
-                  translate: ["100%", 0, 0],
-                },
-              }}
-              modules={[EffectCreative]}
-              className="mySwiper"
-            >
-              <SwiperSlide>Slide 1</SwiperSlide>
-              <SwiperSlide>Slide 2</SwiperSlide>
-              <SwiperSlide>Slide 3</SwiperSlide>
-              <SwiperSlide>Slide 4</SwiperSlide>
-              <SwiperSlide>Slide 5</SwiperSlide>
-              <SwiperSlide>Slide 6</SwiperSlide>
-              <SwiperSlide>Slide 7</SwiperSlide>
-              <SwiperSlide>Slide 8</SwiperSlide>
-              <SwiperSlide>Slide 9</SwiperSlide>
-            </Swiper> */}
+        
 
-          <div className="-mr-20 mt-0 md:-mt-20 ">
+          <div className="-mr-20 mt-0 md:-mt-20">
+            
             <img src="/icon/tfoot 1.png" alt="" />
           </div>
         </div>
@@ -527,7 +575,7 @@ const Home = () => {
               also make positive network here!
             </h1>
           </div>
-          <div className="mt-8 ">
+          <div className="mt-8 animate-bounce">
             <a
               className="lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-biru text-white border-white border-4  hover:rotate-0 hover:scale-125 hover:bg-gray-100 hover:text-biru hover:border-4 hover:border-biru text-xl font-bold rounded-xl transition duration-200"
               href="pages/auth/signin.html"

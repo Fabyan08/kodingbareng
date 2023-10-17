@@ -51,7 +51,7 @@ const Footer = () => {
             <ul className="flex items-center justify-center space-x-8 xl:justify-end">
               <li>
                 <a
-                  href="#"
+                  href="https://tiktok.com/@kodingbareng"
                   title=""
                   className="block text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
                 >
@@ -70,7 +70,7 @@ const Footer = () => {
 
               <li>
                 <a
-                  href="#"
+                  href="https://instagram.com/kodingbareng_"
                   title=""
                   className="block text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
                 >

@@ -1,12 +1,18 @@
+import { useEffect, useState, useRef } from "react";
+
+import CountUp from "react-countup/build";
 import Footer from "../Components/Footer/Index";
 import Desktop from "../Components/Nav/Desktop";
-// import Button from "../Components/Button/Index";
+
 import OwlCarousel from "react-owl-carousel";
 import Button from "../Components/Button/Index";
-// import "owl.carousel/dist/assets/owl.carousel.css";
-// import "owl.carousel/dist/assets/owl.theme.default.css";
+
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import { motion } from "framer-motion";
+import "aos/dist/aos.css";
+
+import AOS from "aos";
 
 import Andro from "../Components/Nav/Andro";
 
@@ -33,7 +39,13 @@ const options = {
 };
 
 const items = [
-  <div className="item" key={1}>
+  <div
+    className="item"
+    key={1}
+    data-aos="fade-up"
+    data-aos-anchor-placement="top-center"
+    data-aos-duration="1000"
+  >
     <div className="w-full px-2 h-96 md:h-0 md:w-[700px]">
       <div className="relative">
         <div className="backdrop-blur-sm rounded-xl max-w-full absolute inset-0 bg-black/40"></div>
@@ -54,7 +66,13 @@ const items = [
       </div>
     </div>
   </div>,
-  <div className="item" key={2}>
+  <div
+    className="item"
+    key={2}
+    data-aos="fade-up"
+    data-aos-anchor-placement="top-center"
+    data-aos-duration="1500"
+  >
     <div className="w-full px-2 h-96 md:h-0 md:w-[700px]">
       <div className="relative">
         <div className="backdrop-blur-sm rounded-xl max-w-full absolute inset-0 bg-black/40"></div>
@@ -77,11 +95,21 @@ const items = [
     </div>
   </div>,
 
-  <div className="item" key={3}>
+  <div
+    className="item"
+    key={3}
+    data-aos="fade-up"
+    data-aos-anchor-placement="top-center"
+    data-aos-duration="1000"
+  >
     <div className="w-full md:w-[700px]">
       <div className="relative">
         <div className="backdrop-blur-sm rounded-xl max-w-full absolute inset-0 bg-black/40"></div>
-        <img src="/img/about/community.jpg" alt="" className="rounded-xl h-[400px] md:h-full" />
+        <img
+          src="/img/about/community.jpg"
+          alt=""
+          className="rounded-xl h-[400px] md:h-full"
+        />
 
         <div>
           <h1 className="text-3xl max-w-md text-start text-white font-bold  absolute inset-0 flex items-center px-5">
@@ -99,13 +127,50 @@ const items = [
 ];
 
 const About = () => {
+  const [inView, setInView] = useState(false);
+  const countRef = useRef<HTMLDivElement | null>(null);
+
+  // Callback function for Intersection Observer
+  const handleIntersection = (entries: IntersectionObserverEntry[]) => {
+    if (entries[0].isIntersecting) {
+      setInView(true);
+    }
+  };
+
+  // Initialize Intersection Observer
+  useEffect(() => {
+    const observer = new IntersectionObserver(handleIntersection);
+    if (countRef.current) {
+      observer.observe(countRef.current);
+    }
+
+    // Cleanup the observer when the component unmounts
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    AOS.init();
+    once: true;
+  }, []);
   return (
     <>
       <div className="w-full md:z-0 -z-[9]">
         <div className="font-figtree md:min-h-screen h-[550px] bg-biru overflow-hidden">
-          <nav className="relative z-[10] top-0 px-4 py-4 flex justify-between items-center ">
+          <nav
+            className="relative z-[10] top-0 px-4 py-4 flex justify-between items-center "
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
             <a className="text-3xl font-bold leading-none w-40 md:w-60" href="">
-              <img src="/img/logo.png" alt="" />
+              <motion.div
+                whileHover={{ scale: 1.2 }}
+                whileTap={{
+                  scale: 0.8,
+                  borderRadius: "100%",
+                }}
+              >
+                <img src="/img/logo.png" alt="" />
+              </motion.div>
             </a>
             <div className="lg:hidden"></div>
             <Desktop />
@@ -145,15 +210,24 @@ const About = () => {
         ></path>
       </svg>
 
-      <div className="md:flex container overflow-hidden">
+      <div
+        className="md:flex  container overflow-hidden"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
         <div className="md:hidden mt-10 -mb-20 flex justify-center items-center">
           <img src="/img/about/people.jpg" className="rounded-xl w-60" alt="" />
         </div>
+
         <div className="bg-slate-200 rounded-2xl w-full h-[500px] pt-36 md:pt-0 md:h-[700px] flex items-center right-0 md:ml-96">
           <div className="w-[900px] md:-ml-60 hidden md:flex">
             <img src="/img/about/people.jpg" className="rounded-xl" alt="" />
           </div>
-          <div className="md:ml-20 px-10 font-figtree md:-mt-0 -mt-20 md:pr-40">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="4000"
+            className="md:ml-20 px-10 font-figtree md:-mt-0 -mt-20 md:pr-40"
+          >
             <h1 className=" text-lg md:text-xl font-bold">About Us</h1>
             <h3 className="text-3xl md:text-5xl font-bold">
               We Want To Build Positive Community of Indonesian IT
@@ -184,7 +258,11 @@ const About = () => {
         {/* <div className="bg-slate-200 md:px-0 rounded-xl w-[400px] h-[400px]"> */}
 
         <div className="flex flex-wrap md:flex-nowrap md:gap-4 mt-10 justify-center px-10 md:px-0">
-          <div className="mb-5 p-4 md:w-1/3 bg-white rounded-lg itemBox">
+          <div
+            data-aos="fade-down-right"
+            data-aos-duration="1000"
+            className="mb-5 p-4 md:w-1/3 bg-white rounded-lg itemBox"
+          >
             <div className="rounded-lg overflow-hidden">
               <div className="hover:scale-105 transition-transform duration-300 ease-in-out transform origin-center">
                 <div className="absolute bg-dongker text-white rounded-lg px-2 mt-4 ml-4">
@@ -208,7 +286,11 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="mb-5 p-4 md:w-1/3 bg-white rounded-lg itemBox">
+          <div
+            data-aos="fade-down"
+            data-aos-duration="2000"
+            className="mb-5 p-4 md:w-1/3 bg-white rounded-lg itemBox"
+          >
             <div className="rounded-lg overflow-hidden">
               <div className="hover:scale-105 transition-transform duration-300 ease-in-out transform origin-center">
                 <div className="absolute bg-biru text-white rounded-lg px-2 mt-4 ml-4">
@@ -232,7 +314,11 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="mb-5 p-4 md:w-1/3 bg-white rounded-lg itemBox">
+          <div
+            data-aos="fade-down-left"
+            data-aos-duration="4000"
+            className="mb-5 p-4 md:w-1/3 bg-white rounded-lg itemBox"
+          >
             <div className="rounded-lg overflow-hidden">
               <div className="hover:scale-105 transition-transform duration-300 ease-in-out transform origin-center">
                 <div className="absolute bg-blue-900 text-white rounded-lg px-2 mt-4 ml-4">
@@ -265,24 +351,70 @@ const About = () => {
           <div className="flex md:flex-none  justify-center items-center md:-space-x-0 -space-x-48 md:-ml-0 -ml-20">
             <div className="px-40 w-96 text-center">
               <img src="/icon/about/Group 31.png" alt="" />
-              <h1 className="text-white font-black text-6xl">+400</h1>
+              <h1
+                className="text-white font-black text-6xl countup-container"
+                ref={countRef}
+              >
+                {inView && (
+                  <CountUp
+                    end={400}
+                    duration={3}
+                    start={0}
+                    separator=","
+                    prefix="+"
+                  />
+                )}
+              </h1>
               <h1 className="text-white font-md text-2xl">Participants</h1>
             </div>
             <div className="px-40 w-96 text-center">
               <img src="/icon/about/Group 32.png" alt="" />
-              <h1 className="text-white font-black text-6xl">+100</h1>
+              <h1
+                className="text-white font-black text-6xl countup-container"
+                ref={countRef}
+              >
+                {inView && (
+                  <CountUp
+                    end={100}
+                    duration={3}
+                    start={0}
+                    separator=","
+                    prefix="+"
+                  />
+                )}
+              </h1>{" "}
               <h1 className="text-white font-md text-2xl">Followers</h1>
             </div>
           </div>
           <div className="flex md:flex-none  justify-center pt-8 items-center md:-space-x-0 -space-x-48 md:-ml-0 -ml-20">
             <div className="px-40 w-96 text-center">
               <img src="/icon/about/Group 33.png" alt="" />
-              <h1 className="text-white font-black text-6xl">+10K</h1>
+              <h1
+                className="text-white font-black text-6xl countup-container"
+                ref={countRef}
+              >
+                {inView && (
+                  <CountUp
+                    end={10}
+                    duration={3}
+                    start={0}
+                    separator=","
+                    suffix="K"
+                  />
+                )}
+              </h1>{" "}
               <h1 className="text-white font-md text-2xl">Likes</h1>
             </div>
             <div className="px-40 w-96 text-center">
               <img src="/icon/about/Group 34.png" alt="" />
-              <h1 className="text-white font-black text-6xl">24</h1>
+              <h1
+                className="text-white font-black text-6xl countup-container"
+                ref={countRef}
+              >
+                {inView && (
+                  <CountUp end={24} duration={3} start={0} separator="," />
+                )}
+              </h1>{" "}
               <h1 className="text-white font-md text-2xl">Hours</h1>
             </div>
           </div>
